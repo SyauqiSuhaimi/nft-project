@@ -1,16 +1,19 @@
 <template>
-<div class="head">
+<div class="head fixed-top">
   
   <!-- <Header/> -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-  <div class="container" style="font-size: 120%;">
-    <a class="navbar-brand" href="/"><img src="@/assets/logo.png" alt="..." style="max-width:70px;"></a>
+  <div v-if="!hideDonate" class="notification-top-bar row m-0">
+  <div class="col-4"></div><div class="col-4 d-flex justify-content-center align-items-center"><button type="button" class="btn btn-outline-light">Donate Now</button></div><div class="col-4 d-flex justify-content-end align-items-center"><button @click="hideDonate=true" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50" id="mainNav"> 
+  <div class="container" style="font-size: 90%;">
+    <a class="navbar-brand" href="/"><img src="@/assets/logo.png" alt="..." style="max-width:40px;"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item px-3">
+        <li class="nav-item px-1">
           <!-- <a class="nav-link" aria-current="page" href="#">Home</a> -->
           <router-link to="/" class="nav-link">Home</router-link>
         </li>
@@ -37,6 +40,14 @@
 
 <script>
 export default {
+
+  data() {
+    return {
+
+      hideDonate: false,
+    }
+  },
+  
   methods: { 
   scrollToTop() {
     window.scrollTo(0,0);
@@ -55,8 +66,11 @@ window.addEventListener('DOMContentLoaded', event => {
         }
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
+            navbarCollapsible.classList.add('bg-opacity-50')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
+            
+            navbarCollapsible.classList.remove('bg-opacity-50')
         }
 
     };
@@ -81,6 +95,27 @@ window.addEventListener('DOMContentLoaded', event => {
 
 <style>
 
+.notification-top-bar {
+  line-height: 40px;
+  width: 100%;
+  background: #00B050;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.notification-top-bar a {
+  color: white;
+  font-weight: bold;
+}
+
+.notification-top-bar a:hover {
+  color: rgb(4, 139, 47);
+  font-weight: bold;
+}
+
 @media (min-width: 992px) {
     #mainNav {
     /* padding-top: 0;
@@ -90,6 +125,7 @@ window.addEventListener('DOMContentLoaded', event => {
     transition: background-color 0.3s ease-in-out;
     font-weight: bolder;
     letter-spacing: 1px;
+    font-size: 20px;
     
 }
 
@@ -98,7 +134,7 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     #mainNav.navbar-shrink a.nav-link {
-      color: rgb(157, 157, 157);
+      /* color: rgb(157, 157, 157); */
     }
 }
 

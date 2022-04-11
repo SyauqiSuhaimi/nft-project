@@ -1,23 +1,10 @@
 <template>
 
-<div v-if="!hideDonate">
-  <div class="notification-top-bar row m-0">
-  <div class="col-4"></div><div class="col-4 d-flex justify-content-center align-items-center"><a href="#">Donate Now</a></div><div class="col-4 d-flex justify-content-end align-items-center"><button @click="hideDonate=true" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div>
-  </div>
-  <Header style="position:absolute; z-index:1; width:100%; transform: translateY(10%)"/>
+<Header/>
   
-  <router-view/>
+<router-view/>
 
-  <Footer/>
-</div>
-<div v-else>
-<Header style="position:absolute; z-index:1; width:100%;"/>
-  
-  <router-view/>
-
-  <Footer/>
-</div>
-
+<Footer/>
 
 
 
@@ -28,12 +15,7 @@
 import Header from "./components/Header.vue"
 import Footer from "./components/Footer.vue"
 export default {
-  data() {
-    return {
 
-      hideDonate: false,
-    }
-  },
   components: {
     Header,
     Footer
@@ -82,29 +64,16 @@ export default {
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   color: #2c3e50;
 }
 
-
-.notification-top-bar {
-  line-height: 40px;
-  width: 100%;
-  background: #00B050;
-  text-align: center;
-  color: #FFFFFF;
-  font-family: sans-serif;
-  font-weight: lighter;
+.title2{
+  font-size: 50px;
 }
 
-.notification-top-bar a {
-  color: white;
-  font-weight: bold;
+p{
+  font-size: 24px;
 }
-
-.notification-top-bar a:hover {
-  color: rgb(4, 139, 47);
-  font-weight: bold;
-}
-
 </style>

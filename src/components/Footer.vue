@@ -7,16 +7,16 @@
       <!-- <Footer/> -->
   <footer class="d-flex justify-content-between align-items-center p-5">
     <div class="d-flex align-items-center">
-      <a class="navbar-brand" href="#"><img src="@/assets/logo.png" alt="..." style="max-width:40px;"></a>
+      <a class="navbar-brand" href="#"><img src="@/assets/logo.png" alt="..." style="max-width:80px;"></a>
     </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <h4 style="color:white">Follow Us : </h4>
-      <li class="ms-3"><a class="text-muted" href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><i class="fa fa-discord-alt fa-2x" aria-hidden="true"></i></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></li>
+    <ul class="nav col-md-5 d-flex justify-content-end list-unstyled align-items-center">
+      <h3 style="color:white ; margin: auto 0;">Follow Us : </h3>
+      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a></li>
+      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-discord-alt fa-3x" aria-hidden="true"></i></a></li>
+      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a></li>
     </ul>
   </footer>
 <div class="footer2">
@@ -68,6 +68,7 @@ footer {
 
 .footerLink {
   color: white;
+  font-size: 21px;
 
 }
 .footerLink:hover {

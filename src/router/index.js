@@ -1,8 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Landing from '../views/Landing.vue'
 import FAQ from '../views/FaqView.vue'
-import ContactUs from '../views/Landing.vue'
+import ContactUs from '../views/ContactUsView.vue'
 import ProtectView from '../views/ProtectView.vue'
+import Map from '../components/Map.vue'
 
 const routes = [
   {
@@ -34,12 +35,32 @@ const routes = [
     name: 'ProtectView',
     component: ProtectView
   },
+  {
+    path: '/map',
+    name: 'Map',
+    component: Map
+  },
 
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    console.log(savedPosition)
+    if(savedPosition){
+      return savedPosition;
+    }
+    else if(to.hash){
+      return{
+        selector: to.hash,
+      }
+    }
+    else
+    {
+      return{x:0, y:0};
+    }
+  }
 })
 
 export default router

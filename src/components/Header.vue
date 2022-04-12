@@ -3,7 +3,7 @@
   
   <!-- <Header/> -->
   <div v-if="!hideDonate" class="notification-top-bar row m-0">
-  <div class="col-4"></div><div class="col-4 d-flex justify-content-center align-items-center"><button type="button" class="btn btn-outline-light">Donate Now</button></div><div class="col-4 d-flex justify-content-end align-items-center"><button @click="hideDonate=true" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div>
+  <div class="col-4"></div><div class="col-4 d-flex justify-content-center align-items-center"><button type="button" class="btn btn-outline-light" style="white-space: nowrap;">Donate Now</button></div><div class="col-4 d-flex justify-content-end align-items-center"><button @click="hideDonate=true" type="button" class="btn-close" aria-label="Close"></button></div>
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50" id="mainNav"> 
   <div class="container" style="font-size: 90%;">
@@ -15,15 +15,15 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item px-1">
           <!-- <a class="nav-link" aria-current="page" href="#">Home</a> -->
-          <router-link to="/" class="nav-link">Home</router-link>
+          <router-link to="/" class="nav-link homeNav">Home</router-link>
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">Project</a> -->
-          <router-link :to="{name:'ContactUs'}" class="nav-link" @click="scrollToTop()">Save The Rainforest</router-link>
+          <router-link :to="{name:'ContactUs'}" class="nav-link whatwedoNav" @click="scrollToTop()">Save The Rainforest</router-link>
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">News</a> -->
-          <router-link :to="{name:'FAQ'}" class="nav-link" @click="scrollToTop()">FAQ</router-link>
+          <router-link :to="{name:'Map'}" class="nav-link mapNav" @click="scrollToTop()">Protectors</router-link>
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">Contact Us</a> -->
@@ -81,6 +81,26 @@ window.addEventListener('DOMContentLoaded', event => {
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
+
+//     const smallDevice = window.matchMedia("(max-width: 988px)");
+
+// smallDevice.addListener(handleDeviceChange);
+
+// function handleDeviceChange(e) {
+//   if (e.matches)
+//   {
+//     const navbarCollapsible = document.body.querySelector('#mainNav');
+//     navbarCollapsible.classList.remove('bg-opacity-50')
+//     console.log('Media Query Matched!');
+//   } 
+//   else 
+//   {
+//     const navbarCollapsible = document.body.querySelector('#mainNav');
+//     navbarCollapsible.classList.add('bg-opacity-50')
+//     console.log('Media Query noMatched!');
+//   } 
+// }
+
     // // Activate Bootstrap scrollspy on the main nav element
     // const mainNav = document.body.querySelector('#mainNav');
     // if (mainNav) {
@@ -98,7 +118,7 @@ window.addEventListener('DOMContentLoaded', event => {
 .notification-top-bar {
   line-height: 40px;
   width: 100%;
-  background: #00B050;
+  background: var(--primecolor);
   text-align: center;
   color: #FFFFFF;
   font-family: sans-serif;
@@ -133,9 +153,9 @@ window.addEventListener('DOMContentLoaded', event => {
       color: #fff;
     }
 
-    #mainNav.navbar-shrink a.nav-link {
-      /* color: rgb(157, 157, 157); */
-    }
+    /* #mainNav.navbar-shrink a.nav-link {
+      color: rgb(157, 157, 157);
+    } */
 }
 
 
@@ -156,29 +176,29 @@ window.addEventListener('DOMContentLoaded', event => {
 } */
 
 #mainNav a.router-link-exact-active {
-    color: #48f398;
+    color: var(--navcolor);
     outline: none;
-    border-bottom: 0.25rem solid #48f398;
+    border-bottom: 0.25rem solid var(--navcolor);
 }
 
 #mainNav.navbar-shrink a.router-link-exact-active {
-    color: #48f398;
+    color: var(--navcolor);
     outline: none;
-    border-bottom: 0.25rem solid #48f398;
+    border-bottom: 0.25rem solid var(--navcolor);
 }
 
 #mainNav a.nav-link:hover {
-    color: #48f398;
+    color: var(--navcolor);
     outline: none;
-    border-bottom: 0.25rem solid #48f398;
+    border-bottom: 0.25rem solid var(--navcolor);
 }
 
 
 /* ///////////// Mobile View /////////////////////////// */
 @media (max-width: 991px) {
     #mainNav {
-        min-height: 3.5rem;
-    background-color: #fff;
+    min-height: 3.5rem;
+    background-color: black;
     
     }
    

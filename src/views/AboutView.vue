@@ -27,7 +27,35 @@
     </div>
     <div class="custDetail row w-100">
         <div class="custForm col-lg-6 border">
-            form
+            <div class="row"><p><strong>Kindly fill in the form below</strong></p></div>
+            <div class="row"><label>Number of NFT</label></div>
+            <div class="input-group mb-3"><span class="input-group-text inputForm" id="basic-addon1"><i class="fa fa-user" aria-hidden="true" style="color:rgb(4, 139, 47);"></i></span>
+            <input v-model.number="age" type="number" class="form-control inputForm" aria-label="Username" aria-describedby="basic-addon1"></div>
+
+            <div class="row"><label>Wallet Address</label></div>
+            <div class="input-group mb-3"><span class="input-group-text inputForm" id="basic-addon1"><i class="fa-solid fa-wallet" style="color:rgb(4, 139, 47);"></i></span>
+            <input v-model="walletAddress" class="form-control inputForm" aria-label="Username" aria-describedby="basic-addon1"></div>
+            <div class="row"><label>Don't have wallet? Click here to setup a wallet to keep your NFT</label></div>
+
+            <div class="row"><label>Display Name</label></div>
+            <div class="input-group mb-3"><span class="input-group-text inputForm" id="basic-addon1"><i class="fa fa-user" aria-hidden="true" style="color:rgb(4, 139, 47);"></i></span>
+            <input v-model="walletAddress" class="form-control inputForm" aria-label="Username" aria-describedby="basic-addon1"></div>
+            <div class="row"><label><input type="checkbox" id="mike" value="Mike" v-model="checkedNames"> Keep my contribution anonymous</label></div>
+            
+            <div class="row"><label>Email Address</label></div>
+            <div class="input-group mb-3"><span class="input-group-text inputForm" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true" style="color:rgb(4, 139, 47);"></i></span>
+            <input v-model="walletAddress" class="form-control inputForm" aria-label="Username" aria-describedby="basic-addon1"></div>
+
+            <div class="row"><label>Country</label></div>
+            <div class="input-group mb-3"><span class="input-group-text inputForm" id="basic-addon1"><i class="fa fa-globe" aria-hidden="true" style="color:rgb(4, 139, 47);"></i></span>
+            <input v-model="walletAddress" class="form-control inputForm" aria-label="Username" aria-describedby="basic-addon1"></div>
+
+            <div class="row"><label>Message</label></div>
+            <div class="input-group mb-3"><span class="input-group-text inputForm" id="basic-addon1"><i class="fa fa-comments" aria-hidden="true" style="color:rgb(4, 139, 47);"></i></span>
+            <textarea v-model="walletAddress" class="form-control inputForm" aria-label="Username" aria-describedby="basic-addon1"></textarea></div>
+            <div class="row"><label><input type="checkbox" id="mike" value="Mike" v-model="checkedNames"> Send it as a gift to someone</label></div>
+            <div class="row"><label>We'll send the NFT to receipent's email. </label></div>
+            <div class="row"><label>Receipt will send to purchaser </label></div>
         </div>
         <div class="checkoutDetail col-lg-6 border">
             checkout
@@ -47,4 +75,8 @@ export default {
 
 <style>
 
+.inputForm{
+    background-color: #E2F0D9;
+    border: 0;
+}
 </style>

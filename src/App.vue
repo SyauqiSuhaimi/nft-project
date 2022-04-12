@@ -60,20 +60,41 @@ export default {
 </script>
 
 <style>
+
+:root {
+  --navcolor:  #48f398;
+  --primecolor:  #198754;
+}
+
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   text-align: center;
-  color: #2c3e50;
+  font-size: 20px;
 }
 
-.title2{
-  font-size: 50px;
-}
 
-p{
+/* .title2{
+  font-size: 25px;
+} */
+
+/* p{
   font-size: 24px;
+} */
+
+/* p { font-size: calc(0.3rem + 1vw);} */
+
+@media (max-width: 575.98px){
+  
+  #app {
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  text-align: center;
+  font-size: 12px;
+}
 }
 </style>

@@ -1,14 +1,14 @@
 <template>
 
-<div class="parent">
+<section class="parent" id="carouselParent">
 
 <div class="carousel">      
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/HomeImage/image1.jpg" class="d-block w-100" style="max-height: 700px;" alt="...">
+      <img src="../assets/HomeImage/image1.jpg" class="d-block w-100" style="max-height: 600px;" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h1 class="captions display-4 text-start">Only USD0.01 a day, you can protect the rainforest for 30 years from destruction.</h1>
+        <h1 class=" captions title2 text-start"><strong>Only USD0.01 a day, you can protect the rainforest for 30 years from destruction.</strong></h1>
       </div>
     </div>
     <!-- <div class="carousel-item">
@@ -43,43 +43,63 @@
 
   <div class="aboutUs">
       
-  <div class="bg-body p-5 abotUs">
-          <h1 class="title2">About Us</h1>
+  <div class="bg-body p-md-5 px-4 abotUs border">
+          <h1 class="title2"><strong>About Us</strong></h1>
           <div style="text-align: justify; margin-top:3%;">
           <p>Malaysia is rich in biodiversity with around 306 species of mammals, 15,000 vascular plants and many species. This is largely to do with the tropical forests which are naturally rich in life all around the world. When forested cover decreases so does biodiversity, with wildlife being exposed and vulnerable to hunting, poaching, loss of breeding grounds as well as food resources. Beside that, much of that stored carbon is released into the atmosphere again as CO2 when forest are cut down. This is how deforestation and forest degradation contribute to global warming.</p>
           <p>Need For Tree is a forest conservation service that protects rainforest ecosystems in Malaysia, and preserves them for future generations.  On behalf of tropical communities, we acquire rainforest real estate, and sell it to people anywhere on the globe, with the guarantee that the forest remains untouched for at least 30 years.</p>
           <p>However, going green is not just an option, it is the future. We need to protect the environment; hence everyone should help the forest. If you're concerned about deforestation and the effect it has on vulnerable endangered species and people, now there's something you can do about it.</p>
         </div>
+
         <div class="row">
-          <div class="col">
-            <div class="card" style="max-width: 40vh; margin: 10px auto;">
-            
-            <div class="card-body">
-              <img src="../assets/HomeImage/image1.jpg" class="card-img-top my-2" alt="...">
-                <h3 class="card-title"><strong>Project A</strong></h3>
-                <p class="card-text">Protect Rainforest for 30 years USD100.00</p>
-                <button type="button" class="btn btn-primary p-3 shadow" id="buttons"> Donate Now</button>
-            </div>
+        <div class="col-md-6 d-flex justify-content-center my-2">
+            <div class="cardAbout border">
+              <div class="">
+                <div class="">
+                <img src="../assets/HomeImage/image1.jpg" class="w-100" alt="..." style="border-radius: 10px 10px 0px 0px;">
+              </div>
+              <div class="cardPrice text-light">USD100.00</div>
+              <div class="cardDesc1">Protect Rainforest for 30 years</div>
+              <div class="cardTitle1">Project A</div>
+              <div class="my-1 d-none d-md-block">
+                <button type="button" class="btn btn-success btn-lg "><strong>Donate Now</strong></button>
+                </div>
+                <div class="my-1 d-md-none">
+                <button type="button" class="btn btn-success btn-sm "><strong>Donate Now</strong></button>
+                </div>
+              </div>
+              
             </div>
           </div>
-          <div class="col">
-            <div class="card" style="max-width: 40vh; margin: 10px auto;">
-            
-            <div class="card-body">
-              <img src="../assets/HomeImage/image1.jpg" class="card-img-top my-2" alt="...">
-                <h3 class="card-title"><strong>Project A</strong></h3>
-                <p class="card-text">Contribute to Keep It Green USD5.00</p>
-                <button type="button" class="btn btn-primary p-3 shadow" id="buttons"> Donate Now </button>
-            </div>
+
+          <div class="col-md-6 d-flex justify-content-center my-2">
+            <div class="cardAbout border">
+              <div class="">
+                <div class="">
+                <img src="../assets/HomeImage/image1.jpg" class="w-100" alt="..." style="border-radius: 10px 10px 0px 0px;">
+              </div>
+              <div class="cardPrice text-light">USD5.00</div>
+              <div class="cardDesc1">Contribute to Keep It Green</div>
+              <div class="cardTitle1">Project A</div>
+              <div class="my-1 d-none d-md-block">
+                <button type="button" class="btn btn-success btn-lg "><strong>Donate Now</strong></button>
+                </div>
+                <div class="my-1 d-md-none">
+                <button type="button" class="btn btn-success btn-sm "><strong>Donate Now</strong></button>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
+
+
 </div>
 </div>
 
 
 
-  </div>
+  </section>
 </template>
 
 <script>
@@ -89,6 +109,33 @@ export default {
 </script>
 
 <style>
+
+.cardAbout{
+
+max-width: 24rem; 
+/* margin: 10px auto; */
+ border-radius: 10px;
+ padding: 0;
+}
+
+.cardPrice{
+   background-color: var(--primecolor);
+   padding: 3px;
+   margin: 0;
+   font-weight: bold;
+}
+
+.cardTitle1{  
+font-weight: bold;
+color: var(--primecolor);
+padding: 3px;
+}
+
+.cardDesc1
+{
+  padding: 3px;
+}
+
 
 .carousel-inner {
   position: relative;
@@ -126,15 +173,17 @@ bottom: 80%;
 
 }
 
+
+
 .captions {
   font-weight:bolder; 
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   
 }
 
-.parent {
-  /* position: relative; */
-}
+/* .parent {
+  position: relative;
+} */
 
 .carousel{
   z-index: -1;
@@ -154,26 +203,48 @@ bottom: 80%;
   min-height:800px; 
   margin:30px auto; 
   border-radius: 100px;
+  text-align-last: center;
 }
+
 
 #buttons{
   background-color: #00B050;
   color: white;
   border: 0;
-  
+  border-radius: 15px;
+  transition: box-shadow .15s,transform .15s;
+  margin: 10px;
+  font-size: calc(0.3rem + 1vw);
   
 }
 
-#buttons:hover{
+#buttons:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#buttons:hover {
   background-color: rgb(4, 139, 47);
   color: white;
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
 
+#buttons:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
 
-/* .spacer{
-  min-height: 10000px;
-  margin: 0 0 -50px 0;
-  background-color: #000;
-} */
+@media (max-width: 767px){
+  .aboutUs{
+  /* position: absolute; */
+  /* top: 80%;
+  left: 10%;
+  right: 10%; */
+  z-index: 1;
+  margin: 0;
+}
+}
+
+/* @import "bootstrap"; */
 
 </style>

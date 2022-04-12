@@ -1,120 +1,141 @@
 <template>
-  <div class="whatWedo" >
-      <div class="p-5 bg-body rounded" style="max-width: 1200px; margin:30px auto">
+  <section class="whatWedo" id="whatWedo">
+      <div class="p-4 border rounded" style="max-width: 1200px; margin:auto;">
+
+<!-- //////////////////////////////// Web View ///////////////////////////////// -->
+<div class="d-none d-lg-block">
+          <div class="row mb-4 d-flex justify-content-center ">
+              <div class="col-5 p-0 navTab" :class="{active: DeforestActive}" @click="ActiveDeforest"> <h1 class="title2"><strong>Effects of Deforestation</strong></h1></div>
+              <div class="col-5 navTab2" :class="{active: WhatwedoActive}" @click="ActiveWhatwedo"><h1 class="title2"><strong>What We Do</strong></h1></div>
+          </div>
+
+           <!-- ////////////////////// Deforestation //////////////////////////////////////-->
+          <div class="row" v-show="WhatwedoActive">
+              <div class="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="deforestImg1 w-100">
+                           <img class="w-100" src="../assets/Deforestation/img1.jpg" alt="..." />
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="deforestDetail1 p-3 rounded">
+                            <p class="cardTitle">Soil Erosion & Floods</p>
+                            <p class="mb-0 text-white" style="text-align: justify;">With the clearance of tree cover, the land is directly exposed to the sun, making it dry. When it rains, the flow of water is disrupted, and the soil loses its ability to retain water. It leads to floods in some areas and droughts in others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 ">
+                            <div class="deforestDetail2 p-3 rounded">
+                            <p class="cardTitle">Increase in Global Warming</p>
+                            <p class="mb-0 text-white " style="text-align: justify;">Trees help regulate the climate by absorbing CO2 from the atmosphere. With constant deforestation, the ratio of greenhouse gases in the atmosphere has increased, adding to our global warming woes.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="deforestImg2">
+                                <img class="w-100" src="../assets/Deforestation/img2.jpg" alt="..." />
+                            </div>
+                            <div class="deforestImg3">
+                                <img class="w-100" src="../assets/Deforestation/img3.jpg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="deforestImg4">
+                                <img class="w-100" src="../assets/Deforestation/img4.jpg" alt="..." />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="deforestDetail3 p-3 rounded">
+                            <p class="cardTitle">Wildlife Extinction & Habitat Loss</p>
+                            <p class="mb-0 text-white" style="text-align: justify;">Due to the massive felling down of trees, various animal species are lost. They lose their habitat and also forced to move to a new location. Many of them are even pushed to extinction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+            
+             <!-- ////////////////////// Deforestation //////////////////////////////////////-->
+
+            <!-- ////////////////////// What WE Do //////////////////////////////////////-->
+
+          <div class="row" v-show="DeforestActive">
+              <div class="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="whatwedoImg1">
+                           <img class="w-100" src="../assets/Whatwedo/img1.webp" alt="..." />
+                           </div>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center ">
+                            <div class="whatwedoDetail1 p-3 rounded">
+                            <p class="cardTitle">Tree Planting</p>
+                            <p class="mb-0 text-white" style="text-align: justify;">Once land is under conservation management by Need For Trees, options are investigated to restore deforested land and degraded habitat, reconnecting previously fragmented forest patches. This can be achieved using two techniques; tree planting and removing a threat to allow forest to regenerate naturally.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="whatwedoDetail2 p-3 rounded">
+                            <p class="cardTitle">Land Acquisition</p>
+                            <p class="mb-0 text-white" style="text-align: justify;">We preserve rainforest from threatened habitats through land purchase. Partnership with government body and local community, Need For Trees funds the purchase or lease of threatened land to create nature reserves, protecting both habitats and their wildlife.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="whatwedoImg2">
+                                <img class="w-100" src="../assets/Whatwedo/img2.jpeg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="whatwedoImg3">
+                                <img class="w-100" src="../assets/Whatwedo/img3.jpg" alt="..." />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="whatwedoDetail3 p-3 rounded">
+                            <p class="cardTitle">Forest Patrol</p>
+                            <p class="mb-0 text-white" style="text-align: justify;">Dedicated Patrol Team who supports the protection of the rainforest from illegal logging, hunting of endangered species and forest fires.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="whatwedoDetail4 p-3 rounded">
+                            <p class="cardTitle">Maintenance</p>
+                            <p class="mb-0 text-white" style="text-align: justify;">Maintenance is an important part of our reforestation project. With regular maintenance such as assessment of trees safety conditions, the saplings have a growth and survival rate of up to 85% compared to saplings without maintenance.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="whatwedoImg4">
+                                <img class="w-100" src="../assets/Whatwedo/img4.jpg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+           <!-- ////////////////////// What WE Do //////////////////////////////////////-->
+
+           </div>
 
           <!-- //////////////////////////////// Web View ///////////////////////////////// -->
-      <div class="d-none d-lg-block">
-        <ul class="nav nav-tabs tabsStyle justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item box mx-1" role="presentation">
-                <button class="nav-link active" id="deforest-tab" data-bs-toggle="tab" data-bs-target="#deforest" type="button" role="tab" aria-controls="home" aria-selected="true">Effects of Deforestation</button>
-            </li>
-            <li class="nav-item box2 mx-1" role="presentation">
-                <button class="nav-link" id="whatwedo-tab" data-bs-toggle="tab" data-bs-target="#whatwedo" type="button" role="tab" aria-controls="profile" aria-selected="false">What We Do</button>
-            </li>
-        </ul>
-            <div class="tab-content" id="myTabContent">
 
-                
-                <!-- ////////////////////// Deforestation //////////////////////////////////////-->
-            <div class="tab-pane fade show active py-3" id="deforest" role="tabpanel" aria-labelledby="deforest-tab">
-                <div class="deforestParent">
-                    <div class="deforestImg1">
-                    <img class="w-100" src="../assets/Deforestation/img1.jpg" alt="..." />
-                    </div>
-
-                    <div class="deforestDetail1 p-3 rounded">
-                        <h4 class="text-light cardTitle">Increase in Global Warming</h4>
-                        <p class="mb-0 text-white">Trees help regulate the climate by absorbing CO2 from the atmosphere. With constant deforestation, the ratio of greenhouse gases in the atmosphere has increased, adding to our global warming woes.</p>
-                    </div>
-
-                    <div class="deforestDetail2 p-3 rounded">
-                        <h4 class="text-light cardTitle">Soil Erosion & Floods</h4>
-                        <p class="mb-0 text-white">With the clearance of tree cover, the land is directly exposed to the sun, making it dry.  
-When it rains, the flow of water is disrupted, and the soil loses its ability to retain water. It leads to floods in some areas and droughts in others.</p>
-                    </div>
-
-                    <div class="deforestImg2">
-                    <img class="w-100" src="../assets/Deforestation/img2.jpg" alt="..." />
-                    </div>
-
-                    <div class="deforestImg3">
-                    <img class="w-100" src="../assets/Deforestation/img3.jpg" alt="..." />
-                    </div>
-
-                    <div class="deforestImg4">
-                    <img class="w-100" src="../assets/Deforestation/img4.jpg" alt="..." />
-                    </div>
-
-                    <div class="deforestDetail3 p-3 rounded">
-                        <h4 class="text-light cardTitle">Wildlife Extinction & Habitat Loss</h4>
-                        <p class="mb-0 text-white">Due to the massive felling down of trees, various animal species are lost. They lose their habitat and also forced to move to a new location. Many of them are even pushed to extinction.</p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- ////////////////////// Deforestation //////////////////////////////////////-->
-
-            <!-- ////////////////////// What WE Do //////////////////////////////////////-->
-            <div class="tab-pane fade py-3" id="whatwedo" role="tabpanel" aria-labelledby="whatwedo-tab">
-                <div class="whatwedoParent">
-                    <div class="whatwedoImg1">
-                    <img class="w-100" src="../assets/Whatwedo/img1.webp" alt="..." />
-                    </div>
-
-                    <div class="whatwedoDetail1 p-3 rounded">
-                        <h4 class="text-light cardTitle">Tree Planting</h4>
-                        <p class="mb-0 text-white">Once land is under conservation management by Need For Trees, options are investigated to restore deforested land and degraded habitat, reconnecting previously fragmented forest patches. This can be achieved using two techniques; tree planting and removing a threat to allow forest to regenerate naturally.</p>
-                    </div>
-
-                    <div class="whatwedoDetail2 p-3 rounded">
-                        <h4 class="text-light cardTitle">Land Acquisition</h4>
-                        <p class="mb-0 text-white">We preserve rainforest from threatened habitats through land purchase. Partnership with government body and local community, Need For Trees funds the purchase or lease of threatened land to create nature reserves, protecting both habitats and their wildlife.</p>
-                    </div>
-
-                    <div class="whatwedoImg2">
-                    <img class="w-100" src="../assets/Whatwedo/img2.jpeg" alt="..." />
-                    </div>
-
-                    <div class="whatwedoImg3">
-                    <img class="w-100" src="../assets/Whatwedo/img3.jpg" alt="..." />
-                    </div>
-
-                    <div class="whatwedoDetail3 p-3 rounded">
-                        <h4 class="text-light cardTitle">Forest Patrol</h4>
-                        <p class="mb-0 text-white">Dedicated Patrol Team who supports the protection of the rainforest from illegal logging, hunting of endangered species and forest fires.</p>
-                    </div>
-
-                    <div class="whatwedoDetail4 p-3 rounded">
-                        <h4 class="text-light cardTitle">Maintenance</h4>
-                        <p class="mb-0 text-white">With regular maintenance such as assessment of trees safety conditions, the saplings have a growth and survival rate of up to 85% compared to saplings without maintenance.</p>
-                    </div>
-
-                    <div class="whatwedoImg4">
-                    <img class="w-100" src="../assets/Whatwedo/img4.jpg" alt="..." />
-                    </div>
-                </div>
-
-            </div>
-            <!-- ////////////////////// What WE Do //////////////////////////////////////-->
-
-
-            </div>
-      </div>
-      <!-- //////////////////////////////// Web View ///////////////////////////////// -->
 
       <!-- //////////////////////////////// Mobile View ///////////////////////////////// -->
       <div class="d-lg-none">
-          <ul class="nav nav-tabs d-flex justify-content-center" id="myTab2" role="tablist">
-            <li class="nav-item text-center my-2" role="presentation">
-                <button class="nav-link active" id="deforest-tab2" data-bs-toggle="tab" data-bs-target="#deforest2" type="button" role="tab" aria-controls="deforest2" aria-selected="true">Effects of Deforestation</button>
-            </li>
-            <li class="nav-item text-center my-2" role="presentation">
-                <button class="nav-link" id="whatwedo-tab2" data-bs-toggle="tab" data-bs-target="#whatwedo2" type="button" role="tab" aria-controls="whatwedo2" aria-selected="false">What We Do</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active py-3" id="deforest2" role="tabpanel" aria-labelledby="deforest-tab2">
-                <div class="row d-flex justify-content-center my-3">
+          <div class="row mb-4">
+              <!-- <div class="col title2 navTabMobile py-2 rounded" :class="{'active' : navTabMobile == 'deforest'}" @click="navTabMobile = 'deforest'"> Effects of Deforestation</div>
+              <div class="col title2 navTabMobile2 py-2 rounded" @click="navTabMobile = 'whatwedo'">What We Do</div> -->
+              <div class="col title2 navTabMobile py-2 rounded title2" :class="{active: DeforestActive}" @click="ActiveDeforest"> Effects of Deforestation</div>
+              <div class="col title2 navTabMobile2 py-2 rounded title2" :class="{active: WhatwedoActive}" @click="ActiveWhatwedo">What We Do</div>
+          </div>
+
+           <!-- ////////////////////// Deforestation //////////////////////////////////////-->
+          <div class="row" v-show="DeforestActive">
+              <div class="row d-flex justify-content-center my-3 mx-1">
                     <div class="card cardStyle" style="max-width: 500px;">
                     <img src="../assets/Deforestation/img1.jpg" class="w-100" alt="...">
                     <div class="card-body">
@@ -123,7 +144,7 @@ When it rains, the flow of water is disrupted, and the soil loses its ability to
                     </div>
                     </div>
                 </div>
-                 <div class="row d-flex justify-content-center my-3">
+                 <div class="row d-flex justify-content-center my-3 mx-1">
                     <div class="card cardStyle" style="max-width: 500px;">
                     <img src="../assets/Deforestation/img2.jpg" class="w-100" alt="...">
                     <div class="card-body">
@@ -134,7 +155,7 @@ When it rains, the flow of water is disrupted, and the soil loses its ability to
                     </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center my-3">
+                <div class="row d-flex justify-content-center my-3 mx-1">
                     <div class="card cardStyle" style="max-width: 500px;">
                     <img src="../assets/Deforestation/img4.jpg" class="w-100" alt="...">
                     <div class="card-body">
@@ -143,21 +164,23 @@ When it rains, the flow of water is disrupted, and the soil loses its ability to
                     </div>
                     </div>
                 </div>
-            </div>
+          </div>
 
-<!-- ////////////////////// What WE Do //////////////////////////////////////-->
+           <!-- ////////////////////// Deforestation //////////////////////////////////////-->
 
-            <div class="tab-pane fade" id="whatwedo2" role="tabpanel" aria-labelledby="whatwedo-tab2">
-                <div class="row d-flex justify-content-center my-3">
+        <!-- ////////////////////// What WE Do //////////////////////////////////////-->
+          <div class="row" v-show="WhatwedoActive">
+
+              <div class="row d-flex justify-content-center my-3 mx-1">
                     <div class="card cardStyle" style="max-width: 500px;">
-                    <img src="../assets/Whatwedo/img1.webp" class="w-100" alt="...">
+                    <img src="../assets/Whatwedo/img1.webp" class="w-100" alt="..." style="transform: scaleX(-1);">
                     <div class="card-body">
                         <h1 class="cardTitle">Tree Planting</h1>
                         <p class="card-text justifyText">Once land is under conservation management by Need For Trees, options are investigated to restore deforested land and degraded habitat, reconnecting previously fragmented forest patches. This can be achieved using two techniques; tree planting and removing a threat to allow forest to regenerate naturally.</p>
                     </div>
                     </div>
                 </div>
-                 <div class="row d-flex justify-content-center my-3">
+                 <div class="row d-flex justify-content-center my-3 mx-1">
                     <div class="card cardStyle" style="max-width: 500px;">
                     <img src="../assets/Whatwedo/img2.jpeg" class="w-100" alt="...">
                     <div class="card-body">
@@ -166,7 +189,7 @@ When it rains, the flow of water is disrupted, and the soil loses its ability to
                     </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center my-3">
+                <div class="row d-flex justify-content-center my-3 mx-1">
                     <div class="card cardStyle" style="max-width: 500px;">
                     <img src="../assets/Whatwedo/img3.jpg" class="w-100" alt="...">
                     <div class="card-body">
@@ -175,25 +198,24 @@ When it rains, the flow of water is disrupted, and the soil loses its ability to
                     </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center my-3">
+                <div class="row d-flex justify-content-center my-3 mx-1">
                     <div class="card cardStyle" style="max-width: 500px;">
                     <img src="../assets/Whatwedo/img4.jpg" class="w-100" alt="...">
                     <div class="card-body">
                         <h1 class="cardTitle">Maintenance</h1>
-                        <p class="card-text justifyText">With regular maintenance such as assessment of trees safety conditions, the saplings have a growth and survival rate of up to 85% compared to saplings without maintenance.</p>
+                        <p class="card-text justifyText">Maintenance is an important part of our reforestation project. With regular maintenance such as assessment of trees safety conditions, the saplings have a growth and survival rate of up to 85% compared to saplings without maintenance.</p>
                     </div>
                     </div>
                 </div>
-            </div>
-        </div>
+          </div>
 
-        <!-- ////////////////////// What WE Do //////////////////////////////////////-->
+          <!-- ////////////////////// What WE Do //////////////////////////////////////-->      
 
       </div>
       <!-- //////////////////////////////// Mobile View ///////////////////////////////// -->
 
       </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -206,18 +228,47 @@ export default {
         const HideWeDo = ref(true)
 
         return{HideWeDo}
+    },
+
+    data() {
+      return {
+        navTab: 'deforest',
+        navTabMobile: 'deforest',
+
+        DeforestActive: true,
+        WhatwedoActive: false,
+      }
+    },
+
+    methods: {
+    ActiveDeforest: function() {
+      this.DeforestActive = true;
+      this.WhatwedoActive = false;
+      // some code to filter users
+    },
+
+    ActiveWhatwedo: function() {
+      this.DeforestActive = false;
+      this.WhatwedoActive = true;
+      // some code to filter users
     }
+  }
 }
 </script>
 
 <style>
 
-/* .whatWedo{
-    height: 1700px;
-    background-color: rgb(70, 70, 70);
-    margin: auto 0;
-    padding: 10px;
-} */
+.whatWedo{
+    /* background-color: #e3dddd; */
+    padding: 50px 0;
+    /* background-image: url(../assets/bg2.png); */
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.title3{
+  font-size: calc(23px + 1vw);
+}
 
 .justifyText{
     text-align: justify;
@@ -227,68 +278,121 @@ export default {
     background-color: #00B050;
 }
 
-.tabsStyle{
-    /* border-bottom: 1px solid #00B050; */
-}
-
-.nav-tabs .nav-link{
-    color: rgb(188, 188, 188);
-    font-weight: bold;
-    font-size: 40px;
-
-}
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-    color: white;
-    background-color: #00B050;
-    border-color: #00B050 #00B050 #fff;
-}
-
-.nav-tabs .nav-link:hover, .nav-link:focus {
-    color: white;
-    
-}
-
-.box {
-
-    background-size: 200% 100%;
-    background-image: linear-gradient(to left, #00B050 50%, white 50%);
-    -webkit-transition: background-position 0.5s;
-    -moz-transition: background-position 0.5s;
-    transition: background-position 0.5s;
-    color: rgb(188, 188, 188);
-}
-
-.box:hover {
-    background-position: 100% 0;
-    color: rgb(188, 188, 188);
-}
-
-.box2 {
-
-    background-size: 200% 100%;
-    background-image: linear-gradient(to right, white 50%, #00B050 50%);
-    -webkit-transition: background-position 0.5s;
-    -moz-transition: background-position 0.5s;
-    transition: background-position 0.5s;
-    color: rgb(188, 188, 188);
-}
-
-.box2:hover {
-    background-position: -100% 0;
-    color: rgb(188, 188, 188);
-}
+/* .tabsStyle{
+    border-bottom: 1px solid #00B050;
+} */
 
 
 .cardTitle{
     font-weight: bold;
+    /* font-size: calc(0.5rem + 1vw); */
+    color: black;
 }
 
 .cardStyle{
     padding: 10px;
 }
 
+.navTab{
+    color: rgb(188, 188, 188);
+    font-weight: bold;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, #00B050 50%, white 50%);
+    -webkit-transition: background-position 0.5s;
+    -moz-transition: background-position 0.5s;
+    transition: background-position 0.5s;
+    /* border-radius: 10px; */
+
+}
+
+.navTab:hover{
+    cursor: pointer;
+    /* color: white; */
+    /* background-position: 100% 0; */
+
+}
+
+.navTab.active{
+    color: white;
+    background-color: #00B050;
+    border-color: #00B050 #00B050 #fff;
+    background-image: none;
+} 
+
+.navTab2{
+    color: rgb(188, 188, 188);
+    font-weight: bold;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, white 50%, #00B050 50%);
+    -webkit-transition: background-position 0.5s;
+    -moz-transition: background-position 0.5s;
+    transition: background-position 0.5s;
+    /* border-radius: 10px; */
+
+}
+
+.navTab2:hover{
+    cursor: pointer;
+    /* color: white; */
+    /* background-position: -100% 0; */
+
+}
+
+.navTab2.active{
+    color: white;
+    background-color: #00B050;
+    border-color: #00B050 #00B050 #fff;
+    background-image: none;
+} 
+
+.navTabMobile{
+    color: rgb(188, 188, 188);
+    font-weight: bold;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, white 50%, #00B050 50%);
+    -webkit-transition: background-position 0.5s;
+    -moz-transition: background-position 0.5s;
+    transition: background-position 0.5s;
+
+}
+
+.navTabMobile:hover{
+    cursor: pointer;
+    /* color: white; */
+    /* background-position: 0 100%; */
+
+}
+
+.navTabMobile.active{
+    color: white;
+    background-color: #00B050;
+    border-color: #00B050 #00B050 #fff;
+    background-image: none;
+} 
+
+.navTabMobile2{
+    color: rgb(188, 188, 188);
+    font-weight: bold;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, #00B050 50%, white 50%);
+    -webkit-transition: background-position 0.5s;
+    -moz-transition: background-position 0.5s;
+    transition: background-position 0.5s;
+
+}
+
+.navTabMobile2:hover{
+    cursor: pointer;
+    /* color: white; */
+    /* background-position: 0 -100%; */
+
+}
+.navTabMobile2.active{
+    color: white;
+    background-color: #00B050;
+    border-color: #00B050 #00B050 #fff;
+    background-image: none;
+} 
 
 /*/////////////////////// Deforest Tab Style ///////////////// */
 
@@ -297,133 +401,128 @@ export default {
 } */
 
 .deforestImg1{
-    position: absolute;
-    max-width: 600px;
+    /* max-width: 356px; */
+    /* max-height: 190px; */
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin: -2px 20px 0px 185px; */
+    
 }
 
 .deforestDetail1{
-    position: absolute;
-    max-width: 500px;
+    /* max-width: 500px; */
+    /* max-height: 250px; */
     background-color: #00B050;
-    transform: translate(100%,25%);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 40px 0px 0px 0px;
 }
 
 .deforestImg2{
-    position: absolute;
-    max-width: 600px;
-    position: absolute;
-    background-color: #00B050;
-    transform: translate(80%, 110%);
+    max-width: 700px;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: -35px 108px 0px -242px;
 }
 
 .deforestDetail2{
-    position: absolute;
     max-width: 300px;
     background-color: #00B050;
-    transform: translate(20%,100%);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 57px 0px 0px 0px;
+    position: relative;
 }
 
 .deforestImg3{
-    position: absolute;
-    max-width: 500px;
-    position: absolute;
+    /* max-width: 500px; */
     background-color: #00B050;
-    transform: translate(110%,170%);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: -20px 0px 0px 0px;
 }
 
 .deforestDetail3{
-    position: absolute;
     max-width: 300px;
     background-color: #00B050;
-    transform: translate(200%, 250%);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 30px 0px -32px 90px;
 }
 
 .deforestImg4{
-    position: absolute;
-    max-width: 500px;
-    position: absolute;
+    /* max-width: 500px; */
     background-color: #00B050;
-    transform: translate(10%, 230%);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: -25px 0px 0px 0px;
 }
 
 /*/////////////////////// Deforest Tab Style ///////////////// */
 
-
 /*/////////////////////// WhatWeDo Tab Style ///////////////// */
 
 .whatwedoImg1{
-    position: absolute;
-    max-width: 500px;
+    max-width: 575px;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0px -120px -50px 0px;
+    transform: scaleX(-1);
+    position: relative;
+    z-index: 1;
+
 }
 
 .whatwedoDetail1{
-    position: absolute;
     max-width: 600px;
     background-color: #00B050;
-    transform: translate(80%,25%);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 217px 0px 0px -345px;
+    position: relative;
+    z-index: 2;
 }
 
 .whatwedoImg2{
-    position: absolute;
-    width: 500px;
-    position: absolute;
-    transform: translate(100%, 120%);
+    max-width: 700px;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: -10px 0px 0px -100px;
 }
 
 .whatwedoDetail2{
-    position: absolute;
-    max-width: 500px;
+    max-width: 450px;
     background-color: #00B050;
-    transform: translate(10%,160%);
-    z-index: 1;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    margin: 188px -200px 0px 200px;
+    z-index: 4;
 }
 
 .whatwedoImg3{
-    position: absolute;
     max-width: 600px;
-    position: absolute;
-    transform: translate(0,190%);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: -50px 0px 0px 0px;
 }
 
 .whatwedoDetail3{
-    position: absolute;
-    max-width: 400px;
+    max-width: 450px;
     background-color: #00B050;
-    transform: translate(140%, 360%);
-    z-index: 1;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 121px -11px 0px -170px;
+    position: relative;
+    z-index: 2;
 }
 
 .whatwedoImg4{
-    position: absolute;
-    width: 300px;
-    position: absolute;
+    max-width: 400px;
     background-color: #00B050;
-    transform: translate(240%, 300%);
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: -110px 0px 0px 162px;
+    position: relative;
+    z-index: 1;
 }
 
 .whatwedoDetail4{
-    position: absolute;
     max-width: 500px;
-    position: absolute;
     background-color: #00B050;
-    transform: translate(60%, 580%);
-    z-index: 1;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 139px -259px 0px 279px;
+    position: relative;
+    z-index: 3;
 }
 
 /*/////////////////////// WhatWeDo Tab Style ///////////////// */
+
+
 </style>

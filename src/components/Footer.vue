@@ -1,52 +1,51 @@
 <template>
   <div class="footer">
 
-    <div class="footer1 d-flex justify-content-between align-items-center">
-      <img src="../assets/footer.jpg" alt="" class="footer-background">
+    <div class="footer1 d-flex align-items-end py-0">
+      <!-- <img src="../assets/footer.jpg" alt="" class="footer-background"> -->
   </div>
-      <!-- <Footer/> -->
-  <footer class="d-flex justify-content-between align-items-center p-5">
-    <div class="d-flex align-items-center" style="width:250px;">
-      <a class="navbar-brand" href="#"><img src="@/assets/logo.png" alt="..." style="max-width:80px;"></a>
-    </div>
 
-    <div class="">
-      <div class="row justify-content-center"><a href="#" class="footerLink"><i class="fa fa-angle-right" aria-hidden="true"></i> About Us</a></div>
-      <div class="row justify-content-center"><a href="#" class="footerLink"><i class="fa fa-angle-right" aria-hidden="true"></i> Save The Rainforest</a></div>
-      <div class="row justify-content-center"><a href="#" class="footerLink"><i class="fa fa-angle-right" aria-hidden="true"></i> Keep It Green</a></div>
-    </div>
-
-    <div class="">
-      <div class="row justify-content-center"><a href="#" class="footerLink"><i class="fa fa-angle-right" aria-hidden="true"></i>FAQ</a></div>
-      <div class="row justify-content-center"><a href="#" class="footerLink"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us</a></div>
-    </div>
-
+  <div class="footer2">
     <div>
-      <div class="row"><h3 style="color:white ; margin: auto 0;">Follow Us : </h3></div>
-      <div class="row">
-      <ul class="nav col-md-5 d-flex justify-content-end list-unstyled align-items-center w-100">
-      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
-      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-brands fa-discord fa-2x" aria-hidden="true"></i></a></li>
-      <li class="ms-3 p-2"><a class="text-muted" href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></li>
-      </ul>
+      <div class="col-12 text-light">
+        Follow Us
       </div>
     </div>
-    
-  </footer>
-<div class="footer2">
-  <div class="row" style="margin:auto;">
-    <div class="col d-flex justify-content-start" style="color:white;">
-      <span>&copy; 2022 Need For Tree. Official licensed product, all rights reserved.</span>
+    <div class="row mx-0 text-center d-flex justify-content-center">
+      <div class="col-auto p-2 mx-md-2"><a class="text-muted" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
+      <div class="col-auto p-2 mx-md-2"><a class="text-muted" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+      <div class="col-auto p-2 mx-md-2"><a class="text-muted" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+      <div class="col-auto p-2 mx-md-2"><a class="text-muted" href="#"><i class="fa fa-brands fa-discord" aria-hidden="true"></i></a></div>
+      <div class="col-auto p-2 mx-md-2"><a class="text-muted" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
     </div>
-    <div class="col d-flex justify-content-end" style="color:white;">
-      <a href="#" class="footerLink" style="margin: 0 10px">Privacy Policy</a> | 
-      <a href="#" class="footerLink" style="margin: 0 10px">Term Of Use</a>
+    <!-- <div class="row mx-0 text-center d-flex justify-content-center">
+      <div class="col-auto p-2"><button type="button" class="btn btn-outline-light" id="btnFooter" style="white-space: nowrap;">About Us</button></div>
+      <div class="col-auto p-2"><button type="button" class="btn btn-outline-light" style="white-space: nowrap;">Save The Rainforest</button></div>
+      <div class="col-auto p-2"><button type="button" class="btn btn-outline-light" style="white-space: nowrap;">Keep It Green</button></div>
+      <div class="col-auto p-2"><button type="button" class="btn btn-outline-light" style="white-space: nowrap;">FAQ</button></div>
+      <div class="col-auto p-2"><button type="button" class="btn btn-outline-light" style="white-space: nowrap;">Contact Us</button></div>
+    </div> -->
+    <div class="row mx-0 text-center d-flex justify-content-center">
+      <div class="col-3 col-sm-auto p-2 mx-md-2"><a href="#" class="footerLink2">About Us</a></div>
+      <div class="col-auto p-2 mx-md-2"><a href="#" class="footerLink2">Save The Rainforest</a></div>
+      <div class="col-auto p-2 mx-md-2"><a href="#" class="footerLink2">Keep It Green</a></div>
+      <div class="col-auto p-2 mx-md-2"><a href="#" class="footerLink2">FAQ</a></div>
+      <div class="col-auto p-2 mx-md-2"><a href="#" class="footerLink2">Contact Us</a></div>
+    </div>
+    <div class="row mx-0" >
+      <div class="col-6 text-end">
+        <a href="#" class="footerLink">Privacy Policy</a>
+      </div>
+      <div class="col-6 text-start">
+        <a href="#" class="footerLink">Term Of Use</a>
+      </div>
+    </div>
+    <div class="my-2">
+      <div class="col text-light" style="font-size: 12px">
+        &copy; 2022 Need For Tree. Official licensed product, all rights reserved.
+      </div>
     </div>
   </div>
-</div>
-    <!-- <Footer/> -->
   </div>
 </template>
 
@@ -57,18 +56,14 @@ export default {
 </script>
 
 <style>
-footer {
-  /* background-image: url(../assets/footer.jpg);
-  background-size: contain; */
-  background: black;
-}
 
 .footer1 {
-  /* background-image: url(../assets/footer.jpg); */
+  background-image: url(../assets/footer.jpg);
   background-size: contain;
   height: 200px;
   margin: 0;
   padding: 0;
+  background-size: 100% 100%;
   /* background-repeat: repeat-x; */
   
 }
@@ -80,24 +75,44 @@ footer {
 
 .footer2 {
   background: black;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .footerLink {
   color: white;
-  font-size: 21px;
+  font-size: 13px;
 
 }
 .footerLink:hover {
-  color: #00B050;
+  color: var(--navcolor);
 
 }
+
 
 .fa {
   color: white;
+  font-size: 30px;
 }
 
 .fa:hover{
-  color: #00B050;
+  color: var(--navcolor);
 }
+
+.footerLink2 {
+  color: white;
+  /* font-size: 20px; */
+  text-decoration: none;
+
+}
+.footerLink2:hover {
+  color: var(--navcolor);
+
+}
+
+#btnFooter:hover{
+  background: var(--navcolor);
+  border-color: var(--navcolor);
+
+}
+
 </style>

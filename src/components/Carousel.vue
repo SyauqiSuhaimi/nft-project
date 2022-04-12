@@ -43,8 +43,8 @@
 
   <div class="aboutUs">
       
-  <div class="bg-body p-md-5 px-4 abotUs border">
-          <h1 class="title2"><strong>About Us</strong></h1>
+  <div class="bg-body p-md-5 px-4 abotUs">
+          <h1><strong>About Us</strong></h1>
           <div style="text-align: justify; margin-top:3%;">
           <p>Malaysia is rich in biodiversity with around 306 species of mammals, 15,000 vascular plants and many species. This is largely to do with the tropical forests which are naturally rich in life all around the world. When forested cover decreases so does biodiversity, with wildlife being exposed and vulnerable to hunting, poaching, loss of breeding grounds as well as food resources. Beside that, much of that stored carbon is released into the atmosphere again as CO2 when forest are cut down. This is how deforestation and forest degradation contribute to global warming.</p>
           <p>Need For Tree is a forest conservation service that protects rainforest ecosystems in Malaysia, and preserves them for future generations.  On behalf of tropical communities, we acquire rainforest real estate, and sell it to people anywhere on the globe, with the guarantee that the forest remains untouched for at least 30 years.</p>
@@ -61,7 +61,7 @@
               <div class="cardPrice text-light">USD100.00</div>
               <div class="cardDesc1">Protect Rainforest for 30 years</div>
               <div class="cardTitle1">Project A</div>
-              <div class="my-1 d-none d-md-block">
+              <div class="my-1 pb-2 d-none d-md-block">
                 <button type="button" class="btn btn-success btn-lg "><strong>Donate Now</strong></button>
                 </div>
                 <div class="my-1 d-md-none">
@@ -84,7 +84,7 @@
               <div class="my-1 d-none d-md-block">
                 <button type="button" class="btn btn-success btn-lg "><strong>Donate Now</strong></button>
                 </div>
-                <div class="my-1 d-md-none">
+                <div class="my-1 pb-2 d-md-none">
                 <button type="button" class="btn btn-success btn-sm "><strong>Donate Now</strong></button>
                 </div>
               </div>
@@ -128,12 +128,15 @@ max-width: 24rem;
 .cardTitle1{  
 font-weight: bold;
 color: var(--primecolor);
-padding: 3px;
+font-size: 22px;
+padding: 1px;
+padding-top: 0;
 }
 
 .cardDesc1
 {
   padding: 3px;
+  padding-bottom: 0;
 }
 
 
@@ -206,7 +209,7 @@ bottom: 80%;
   text-align-last: center;
 }
 
-
+/* 
 #buttons{
   background-color: #00B050;
   color: white;
@@ -232,7 +235,7 @@ bottom: 80%;
 #buttons:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
-}
+} */
 
 @media (max-width: 767px){
   .aboutUs{

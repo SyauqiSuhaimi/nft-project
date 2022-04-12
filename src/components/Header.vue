@@ -23,7 +23,7 @@
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">News</a> -->
-          <router-link :to="{name:'Map'}" class="nav-link mapNav" @click="scrollToTop()">Protectors</router-link>
+          <router-link :to="{name:'Map'}" class="nav-link mapNav" @click="scrollToTop()">Keep It Green</router-link>
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">Contact Us</a> -->

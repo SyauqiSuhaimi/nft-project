@@ -19,11 +19,13 @@
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">Project</a> -->
-          <router-link :to="{name:'ContactUs'}" class="nav-link whatwedoNav" @click="scrollToTop()">Save The Rainforest</router-link>
+          <!-- <router-link :to="{name:'ContactUs'}" class="nav-link whatwedoNav">Save The Rainforest</router-link> -->
+          <router-link :to="{name:'Landing', hash: '#map'}" class="nav-link whatwedoNav">Save The Rainforest</router-link>
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">News</a> -->
-          <router-link :to="{name:'Map'}" class="nav-link mapNav" @click="scrollToTop()">Keep It Green</router-link>
+          <!-- <router-link :to="{name:'landing', hash:'#map'}" class="nav-link mapNav">Keep It Green</router-link> -->
+          <router-link to="/#test" class="nav-link mapNav">Keep It Green</router-link> 
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">Contact Us</a> -->

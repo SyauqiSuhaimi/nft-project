@@ -94,7 +94,26 @@ export default {
   -moz-osx-font-smoothing: grayscale; */
   /* font-family: 'Times New Roman', Times, serif; */
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
+
+.allTitle{
+  font-size: 25px;
+}
+
+.cardTitle1{
+  font-weight: bold;
+color: var(--primecolor);
+font-size: 16px;
+padding: 1px;
+padding-top: 0;
+}
+
+.cardTitle{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
 }
 </style>

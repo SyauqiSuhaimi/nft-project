@@ -2,12 +2,12 @@
 
 <Carousel/>
 
-
+<Divider/>
 
 <WhatWeDo />
 
 
-<Map/>
+<Map id="test"/>
 
 
 
@@ -29,6 +29,7 @@ import WhatWeDo from '../components/WhatWeDo.vue';
 import Map from '../components/Map.vue';
 import Project from '../components/Project.vue';
 import Footer from "../components/Footer.vue"
+import Divider from "../components/Divider.vue"
 
 export default {
     components: {
@@ -37,7 +38,8 @@ export default {
         WhatWeDo,
         Map,
         Project,
-        Footer
+        Footer,
+        Divider
     },
 
 

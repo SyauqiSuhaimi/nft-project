@@ -6,9 +6,14 @@
   </div>
 
   <div class="footer2">
-    <div>
+    <div class="row mx-0">
+      <div class="col-md-3 d-flex align-items-center ">
+      <a class="navbar-brand d-none d-md-block" href="/"><img src="@/assets/logo.png" alt="..." style="max-width:50%;"></a>
+    </div>
+    <div class="col-md-6">
+      <div>
       <div class="col-12 text-light">
-        Follow Us
+        <strong>Follow Us</strong> 
       </div>
     </div>
     <div class="row mx-0 text-center d-flex justify-content-center">
@@ -46,6 +51,15 @@
       </div>
     </div>
   </div>
+  <div class="col-md-3">
+      
+    </div>
+    </div>
+    
+    </div>
+    
+    
+
   </div>
 </template>
 
@@ -99,13 +113,14 @@ export default {
 }
 
 .footerLink2 {
-  color: white;
+  
+  color: var(--navcolor);
   /* font-size: 20px; */
   text-decoration: none;
 
 }
 .footerLink2:hover {
-  color: var(--navcolor);
+ color: white;
 
 }
 

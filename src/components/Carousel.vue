@@ -44,7 +44,7 @@
   <div class="aboutUs">
       
   <div class="bg-body p-md-5 px-4 abotUs">
-          <h1><strong>About Us</strong></h1>
+          <h1 class="allTitle"> <strong>About Us</strong> </h1>
           <div style="text-align: justify; margin-top:3%;">
           <p>Malaysia is rich in biodiversity with around 306 species of mammals, 15,000 vascular plants and many species. This is largely to do with the tropical forests which are naturally rich in life all around the world. When forested cover decreases so does biodiversity, with wildlife being exposed and vulnerable to hunting, poaching, loss of breeding grounds as well as food resources. Beside that, much of that stored carbon is released into the atmosphere again as CO2 when forest are cut down. This is how deforestation and forest degradation contribute to global warming.</p>
           <p>Need For Tree is a forest conservation service that protects rainforest ecosystems in Malaysia, and preserves them for future generations.  On behalf of tropical communities, we acquire rainforest real estate, and sell it to people anywhere on the globe, with the guarantee that the forest remains untouched for at least 30 years.</p>
@@ -64,7 +64,7 @@
               <div class="my-1 pb-2 d-none d-md-block">
                 <button type="button" class="btn btn-success btn-lg "><strong>Donate Now</strong></button>
                 </div>
-                <div class="my-1 d-md-none">
+                <div class="my-1 pb-2 d-md-none">
                 <button type="button" class="btn btn-success btn-sm "><strong>Donate Now</strong></button>
                 </div>
               </div>
@@ -81,7 +81,7 @@
               <div class="cardPrice text-light">USD5.00</div>
               <div class="cardDesc1">Contribute to Keep It Green</div>
               <div class="cardTitle1">Project A</div>
-              <div class="my-1 d-none d-md-block">
+              <div class="my-1 pb-2 d-none d-md-block">
                 <button type="button" class="btn btn-success btn-lg "><strong>Donate Now</strong></button>
                 </div>
                 <div class="my-1 pb-2 d-md-none">
@@ -92,6 +92,8 @@
             </div>
           </div>
         </div>
+
+        
 
 
 </div>
@@ -110,6 +112,8 @@ export default {
 
 <style>
 
+
+
 .cardAbout{
 
 max-width: 24rem; 
@@ -125,12 +129,14 @@ max-width: 24rem;
    font-weight: bold;
 }
 
+@media (min-width: 575.98px){
 .cardTitle1{  
 font-weight: bold;
 color: var(--primecolor);
 font-size: 22px;
 padding: 1px;
 padding-top: 0;
+}
 }
 
 .cardDesc1
@@ -197,15 +203,16 @@ bottom: 80%;
   /* top: 80%;
   left: 10%;
   right: 10%; */
+  
   z-index: 1;
-  margin: -120px 0 0 0;
+  margin: -85px 0 0 0;
 }
 
 .abotUs{
   max-width: 1200px; 
   min-height:800px; 
   margin:30px auto; 
-  border-radius: 100px;
+  border-radius: 60px;
   text-align-last: center;
 }
 

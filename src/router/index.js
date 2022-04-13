@@ -16,7 +16,7 @@ const routes = [
   },
   {
     path: '/',
-    name: 'landing',
+    name: 'Landing',
     component: Landing
   },
   {
@@ -52,8 +52,13 @@ const router = createRouter({
       return savedPosition;
     }
     else if(to.hash){
-      return{
-        selector: to.hash,
+      // return{
+      //   selector: to.hash,
+      // }
+
+      const options = {
+        top: document.querySelector(to.hash).offsetTop,
+        behaviour: 'smooth',
       }
     }
     else

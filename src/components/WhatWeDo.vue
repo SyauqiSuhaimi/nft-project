@@ -1,35 +1,35 @@
 <template>
-  <section class="whatWedo" id="whatWedo" style="padding:0">
-      <div class="px-4 rounded" style="max-width: 1200px; margin:auto;">
+  <section class="whatWedo px-0" id="whatWedo" >
+      <div class="px-4 rounded" style="max-width: 1000px; margin:auto;">
 
 <!-- //////////////////////////////// Web View ///////////////////////////////// -->
 <div class="d-none d-lg-block">
           <div class="row mb-4 d-flex justify-content-center ">
-              <div class="col-6 navTab py-2" :class="{active: DeforestActive}" @click="ActiveDeforest"> <h1><strong>Effects of Deforestation</strong></h1></div>
-              <div class="col-6 navTab2 py-2" :class="{active: WhatwedoActive}" @click="ActiveWhatwedo"><h1><strong>What We Do</strong></h1></div>
+              <div class="col-md-6 navTab py-2" :class="{active: DeforestActive}" @click="ActiveDeforest"> <h1>Effects of Deforestation</h1></div>
+              <div class="col-md-6 navTab2 py-2" :class="{active: WhatwedoActive}" @click="ActiveWhatwedo"><h1><strong>What We Do</strong> </h1></div>
           </div>
 
            <!-- ////////////////////// Deforestation //////////////////////////////////////-->
-          <div class="row" v-show="DeforestActive">
+          <div class="row"  v-show="DeforestActive">
               <div class="">
                     <div class="row">
                         <div class="col-lg-6 px-0">
-                            <div class="deforestImg1 w-100">
+                            <div class="deforestImg1">
                            <img class="w-100" src="../assets/Deforestation/img1.jpg" alt="..." />
                            </div>
                         </div>
                         <div class="col-lg-6 px-0">
                             <div class="deforestDetail1 p-3 rounded">
-                            <p class="cardTitle">Soil Erosion & Floods</p>
-                            <p class="mb-0 text-white" style="text-align: justify;">With the clearance of tree cover, the land is directly exposed to the sun, making it dry. When it rains, the flow of water is disrupted, and the soil loses its ability to retain water. It leads to floods in some areas and droughts in others.</p>
+                            <p class="cardTitle">Increase in Global Warming</p>
+                            <p class="mb-0" style="text-align: justify;">Trees help regulate the climate by absorbing CO2 from the atmosphere. With constant deforestation, the ratio of greenhouse gases in the atmosphere has increased, adding to our global warming woes. </p>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 px-0 ">
                             <div class="deforestDetail2 p-3 rounded">
-                            <p class="cardTitle">Increase in Global Warming</p>
-                            <p class="mb-0 text-white " style="text-align: justify;">Trees help regulate the climate by absorbing CO2 from the atmosphere. With constant deforestation, the ratio of greenhouse gases in the atmosphere has increased, adding to our global warming woes.</p>
+                            <p class="cardTitle">Soil Erosion & Floods</p>
+                            <p class="mb-0 " style="text-align: justify;">With the clearance of tree cover, the land is directly exposed to the sun, making it dry. <br> When it rains, the flow of water is disrupted, and the soil loses its ability to retain water. It leads to floods in some areas and droughts in others.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 px-0">
@@ -37,7 +37,10 @@
                                 <img class="w-100" src="../assets/Deforestation/img2.jpg" alt="..." />
                             </div>
                             <div class="deforestImg3">
-                                <img class="w-100" src="../assets/Deforestation/img3.jpg" alt="..." />
+                                <!-- <img class="w-100" src="../assets/Deforestation/img3.jpg" alt="..." /> -->
+                            </div>
+                            <div class="deforestblock">
+                                
                             </div>
                         </div>
                     </div>
@@ -50,7 +53,7 @@
                         <div class="col-lg-6 px-0">
                             <div class="deforestDetail3 p-3 rounded">
                             <p class="cardTitle">Wildlife Extinction & Habitat Loss</p>
-                            <p class="mb-0 text-white" style="text-align: justify;">Due to the massive felling down of trees, various animal species are lost. They lose their habitat and also forced to move to a new location. Many of them are even pushed to extinction.</p>
+                            <p class="mb-0" style="text-align: justify;">Due to the massive felling down of trees, various animal species are lost. They lose their habitat and also forced to move to a new location. Many of them are even pushed to extinction.</p>
                             </div>
                         </div>
                     </div>
@@ -66,13 +69,13 @@
                     <div class="row">
                         <div class="col-lg-6 px-0">
                             <div class="whatwedoImg1">
-                           <img class="w-100" src="../assets/Whatwedo/img1.webp" alt="..." />
+                           <img class="w-100" src="../assets/Whatwedo/img1.png" alt="..." />
                            </div>
                         </div>
                         <div class="col-lg-6 px-0 d-flex justify-content-center ">
                             <div class="whatwedoDetail1 p-3 rounded">
                             <p class="cardTitle">Tree Planting</p>
-                            <p class="mb-0 text-white" style="text-align: justify;">Once land is under conservation management by Need For Trees, options are investigated to restore deforested land and degraded habitat, reconnecting previously fragmented forest patches. This can be achieved using two techniques; tree planting and removing a threat to allow forest to regenerate naturally.</p>
+                            <p class="mb-0" style="text-align: justify;">Once land is under conservation management by Need For Trees, options are investigated to restore deforested land and degraded habitat, reconnecting previously fragmented forest patches. This can be achieved using two techniques; tree planting and removing a threat to allow forest to regenerate naturally.</p>
                             </div>
                         </div>
                     </div>
@@ -80,12 +83,12 @@
                         <div class="col-lg-6 px-0">
                             <div class="whatwedoDetail2 p-3 rounded">
                             <p class="cardTitle">Land Acquisition</p>
-                            <p class="mb-0 text-white" style="text-align: justify;">We preserve rainforest from threatened habitats through land purchase. Partnership with government body and local community, Need For Trees funds the purchase or lease of threatened land to create nature reserves, protecting both habitats and their wildlife.</p>
+                            <p class="mb-0" style="text-align: justify;">We preserve rainforest from threatened habitats through land purchase. Partnership with government body and local community, Need For Trees funds the purchase or lease of threatened land to create nature reserves, protecting both habitats and their wildlife.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 px-0">
                             <div class="whatwedoImg2">
-                                <img class="w-100" src="../assets/Whatwedo/img2.jpeg" alt="..." />
+                                <img class="" src="../assets/Whatwedo/img2.jpeg" alt="..." style="width: 500px; height: 400px; object-fit: cover;"/>
                             </div>
                         </div>
                     </div>
@@ -98,7 +101,7 @@
                         <div class="col-lg-6 px-0">
                             <div class="whatwedoDetail3 p-3 rounded">
                             <p class="cardTitle">Forest Patrol</p>
-                            <p class="mb-0 text-white" style="text-align: justify;">Dedicated Patrol Team who supports the protection of the rainforest from illegal logging, hunting of endangered species and forest fires.</p>
+                            <p class="mb-0" style="text-align: justify;">Dedicated Patrol Team who supports the protection of the rainforest from illegal logging, hunting of endangered species and forest fires.</p>
                             </div>
                         </div>
                     </div>
@@ -106,7 +109,7 @@
                         <div class="col-lg-6 px-0">
                             <div class="whatwedoDetail4 p-3 rounded">
                             <p class="cardTitle">Maintenance</p>
-                            <p class="mb-0 text-white" style="text-align: justify;">Maintenance is an important part of our reforestation project. With regular maintenance such as assessment of trees safety conditions, the saplings have a growth and survival rate of up to 85% compared to saplings without maintenance.</p>
+                            <p class="mb-0" style="text-align: justify;">Maintenance is an important part of our reforestation project. With regular maintenance such as assessment of trees safety conditions, the saplings have a growth and survival rate of up to 85% compared to saplings without maintenance.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 px-0">
@@ -127,8 +130,8 @@
       <!-- //////////////////////////////// Mobile View ///////////////////////////////// -->
       <div class="d-lg-none">
           <div class="row mb-4">
-              <div class="col-12 navTabMobile py-2" :class="{active: DeforestActive}" @click="ActiveDeforest"> <h1><strong>Effects of Deforestation</strong></h1></div>
-              <div class="col-12 navTabMobile2 py-2" :class="{active: WhatwedoActive}" @click="ActiveWhatwedo"><h1><strong>What We Do</strong></h1></div>
+              <div class="col-12 navTabMobile py-2" :class="{active: DeforestActive}" @click="ActiveDeforest"> <h1 class="allTitle"><strong>Effects of Deforestation</strong></h1></div>
+              <div class="col-12 navTabMobile2 py-2" :class="{active: WhatwedoActive}" @click="ActiveWhatwedo"><h1 class="allTitle"><strong>What We Do</strong></h1></div>
           </div>
 
            <!-- ////////////////////// Deforestation //////////////////////////////////////-->
@@ -265,34 +268,31 @@ export default {
 
 
 .whatWedo{
-    /* background-color: #e3dddd; */
+    background-color: #4d4c4c;
     padding: 50px 0;
-    /* background-image: url(../assets/bg2.png); */
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-}
-
-.title3{
-  font-size: calc(23px + 1vw);
+    /* background-image: url(../assets/bg4.jpeg); */
+    /* backdrop-filter: grayscale(100%);; */
+    /* background-size: auto 100%;
+    background-repeat: no-repeat; */
 }
 
 .justifyText{
     text-align: justify;
 }
 
-.project-text{
-    background-color:var(--primecolor);
-}
 
 /* .tabsStyle{
     border-bottom: 1px solidvar(--primecolor);
 } */
 
-
+@media (min-width: 576px)
+{
 .cardTitle{
     font-weight: bold;
     font-size: 24px;
     color: black;
+}
+
 }
 
 .cardStyle{
@@ -301,7 +301,7 @@ export default {
 
 .navTab{
     color: rgb(188, 188, 188);
-    background-color: rgb(230, 230, 230);   
+    /* background-color: rgb(230, 230, 230);    */
     /* font-weight: bold;
     background-size: 200% 100%;
     background-image: linear-gradient(to left,var(--primecolor) 50%, white 50%);
@@ -320,16 +320,17 @@ export default {
 }
 
 .navTab.active{
-    color: white;
-    background-color:var(--primecolor);
-    border-color:var(--primecolor)var(--primecolor) #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--navcolor);
+    border-bottom: 0.25rem solid var(--navcolor);
+    /* background-color:white; */
+    /* border-color:var(--primecolor) var(--primecolor) #fff; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     /* background-image: none; */
 } 
 
 .navTab2{
     color: rgb(188, 188, 188);
-    background-color: rgb(230, 230, 230); 
+    /* background-color: rgb(230, 230, 230);  */
     /* font-weight: bold;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%,var(--primecolor) 50%);
@@ -348,10 +349,11 @@ export default {
 }
 
 .navTab2.active{
-    color: white;
-    background-color:var(--primecolor);
-    border-color:var(--primecolor)var(--primecolor) #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--navcolor);
+    border-bottom: 0.25rem solid var(--navcolor);
+    /* background-color:white; */
+    /* border-color:var(--primecolor) var(--primecolor) #fff; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     /* background-image: none; */
 } 
 
@@ -374,9 +376,10 @@ export default {
 }
 
 .navTabMobile.active{
-    color: white;
-    background-color:var(--primecolor);
-    border-color:var(--primecolor)var(--primecolor) #fff;
+    color: var(--navcolor);
+    border-bottom: 0.25rem solid var(--navcolor);
+    /* background-color:white; */
+    /* border-color:var(--primecolor) var(--primecolor) #fff; */
     /* background-image: none; */
 } 
 
@@ -398,9 +401,10 @@ export default {
 
 }
 .navTabMobile2.active{
-    color: white;
-    background-color:var(--primecolor);
-    border-color:var(--primecolor)var(--primecolor) #fff;
+    color: var(--navcolor);
+    border-bottom: 0.25rem solid var(--navcolor);
+    /* background-color:white; */
+    /* border-color:var(--primecolor) var(--primecolor) #fff; */
     /* background-image: none; */
 } 
 
@@ -411,54 +415,68 @@ export default {
 } */
 
 .deforestImg1{
-    /* max-width: 356px; */
+    max-width: 537px;
     /* max-height: 190px; */
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    /* margin: -2px 20px 0px 185px; */
+    margin: 0px -103px -26px 0px;
     
 }
 
 .deforestDetail1{
-    /* max-width: 500px; */
+    max-width: 450px;
     /* max-height: 250px; */
-    background-color:var(--primecolor);
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 40px 0px 0px 0px;
+    margin: 56px 0px 9px 53px;
 }
 
 .deforestImg2{
     max-width: 700px;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: -35px 108px 0px -242px;
+    margin: 0px 55px 0px -141px;
 }
 
 .deforestDetail2{
     max-width: 300px;
-    background-color:var(--primecolor);
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 57px 0px 0px 0px;
+    margin: 177px 0px 0px -2px;
     position: relative;
 }
 
 .deforestImg3{
-    /* max-width: 500px; */
-    background-color:var(--primecolor);
+    width: 420px;
+    height: 420px;
+    background-image: url(../assets/Deforestation/img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: -20px 0px 0px 0px;
+    margin: -34px 0px 0px 79px;
+    position: relative;
+}
+
+.deforestblock{
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: -255px 0px 0px 28px;
+
 }
 
 .deforestDetail3{
-    max-width: 300px;
-    background-color:var(--primecolor);
+    max-width: 337px;
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 30px 0px -32px 90px;
+    margin: 64px 0px 0px 162px;
 }
 
 .deforestImg4{
-    /* max-width: 500px; */
-    background-color:var(--primecolor);
+    max-width: 629px;
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: -25px 0px 0px 0px;
+    margin: -85px -203px 0px -1px;
 }
 
 /*/////////////////////// Deforest Tab Style ///////////////// */
@@ -466,10 +484,10 @@ export default {
 /*/////////////////////// WhatWeDo Tab Style ///////////////// */
 
 .whatwedoImg1{
-    max-width: 575px;
+    max-width: 700px;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0px -120px -50px 0px;
-    transform: scaleX(-1);
+    margin: 0px 0px -50px 0px;
+    /* transform: scaleX(-1); */
     position: relative;
     z-index: 1;
 
@@ -477,57 +495,61 @@ export default {
 
 .whatwedoDetail1{
     max-width: 600px;
-    background-color:var(--primecolor);
+    height: 300px;
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 217px 0px 0px -345px;
+    margin: 119px 0px 0px -72px;
     position: relative;
     z-index: 2;
 }
 
 .whatwedoImg2{
-    max-width: 700px;
+    /* max-width: 700px; */
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: -10px 0px 0px -100px;
+    margin: -42px 0px 0px 0px;
+    position: relative;
+    z-index: 2;
 }
 
 .whatwedoDetail2{
     max-width: 450px;
-    background-color:var(--primecolor);
+    height: 300px;
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
-    margin: 188px -200px 0px 200px;
+    margin: 92px -95px 0px 185px;
     z-index: 4;
 }
 
 .whatwedoImg3{
     max-width: 600px;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: -50px 0px 0px 0px;
+    margin: -70px 0px 0px 0px;
 }
 
 .whatwedoDetail3{
     max-width: 450px;
-    background-color:var(--primecolor);
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 121px -11px 0px -170px;
+    margin: 100px 0px 0px -76px;
     position: relative;
     z-index: 2;
 }
 
 .whatwedoImg4{
     max-width: 400px;
-    background-color:var(--primecolor);
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: -110px 0px 0px 188px;
+    margin: -50px 0px 0px 98px;
     position: relative;
     z-index: 1;
 }
 
 .whatwedoDetail4{
-    max-width: 500px;
-    background-color:var(--primecolor);
+    max-width: 600px;
+    background-color:white;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 139px -259px 0px 279px;
+    margin: 235px -146px 0px 77px;
     position: relative;
     z-index: 3;
 }

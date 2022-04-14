@@ -4,7 +4,7 @@
   
 <router-view/>
 
-<Footer/>
+<Footer id="foot"/>
 
 
 

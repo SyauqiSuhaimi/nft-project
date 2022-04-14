@@ -45,7 +45,10 @@ export default {
 
 }
 
+
 window.addEventListener("DOMContentLoaded", function() {
+
+
     const HomeNav = document.querySelector('.homeNav');
     const whatwedoNav = document.querySelector('.whatwedoNav');
     const mapNav = document.querySelector('.mapNav');
@@ -127,11 +130,5 @@ observer3.observe(sectionMap);
 </script>
 
 <style>
-@media (min-width: 992px) {
-    .mapSection {
-    
-    margin-top: 1400px;
-    
-}
-}
+
 </style>

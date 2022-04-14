@@ -3,7 +3,7 @@
   <div class="divideContainer container-fluid">
 <div class="row h-100">
           <div class="col-md-6 p-0 protectCard">
-            <div class="col-12 bg-dark bg-opacity-50 h-100">
+            <div class="col-12 px-5 bg-dark bg-opacity-50 h-100">
               <div class="col-12 h-50 p-3 text-start dividerTitle"><strong>A better future for the next generation</strong></div>
                   <div class="col-12 h-50 p-3 d-flex align-items-end justify-content-md-end justify-content-center ">
                     <div class="">
@@ -15,8 +15,8 @@
             </div>
         </div>
           <div class="col-md-6 p-0 countMeCard">
-            <div class="col-12 bg-dark bg-opacity-50 h-100">
-            <div class="col-12 h-50 p-3 d-flex justify-content-end dividerTitle2"><strong>Every bit counts...</strong></div>
+            <div class="col-12 px-5 bg-dark bg-opacity-50 h-100">
+            <div class="col-12 h-50 p-3 text-start dividerTitle2"><strong>Every bit counts...</strong></div>
           <div class="col-12 h-50 p-3 d-flex align-items-end justify-content-md-end justify-content-center">
             <div class="">
                       <p class="priceText1">With just <strong class="priceText2">$5/day</strong></p>
@@ -89,7 +89,8 @@ export default {
 }
 
 .priceText2{
-  font-size: 22px
+  font-size: 22px;
+  color: var(--navcolor);
 }
 
 }
@@ -138,7 +139,8 @@ export default {
 }
 
 .priceText2{
-  font-size: 18px
+  font-size: 18px;
+  color: var(--navcolor);
 }
 
 }

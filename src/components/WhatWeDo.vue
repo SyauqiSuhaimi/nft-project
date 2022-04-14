@@ -5,7 +5,7 @@
 <!-- //////////////////////////////// Web View ///////////////////////////////// -->
 <div class="d-none d-lg-block">
           <div class="row mb-4 d-flex justify-content-center ">
-              <div class="col-md-6 navTab py-2" :class="{active: DeforestActive}" @click="ActiveDeforest"> <h1>Effects of Deforestation</h1></div>
+              <div class="col-md-6 navTab py-2" :class="{active: DeforestActive}" @click="ActiveDeforest"> <h1><strong>Effects of Deforestation</strong></h1></div>
               <div class="col-md-6 navTab2 py-2" :class="{active: WhatwedoActive}" @click="ActiveWhatwedo"><h1><strong>What We Do</strong> </h1></div>
           </div>
 
@@ -415,7 +415,7 @@ export default {
 } */
 
 .deforestImg1{
-    max-width: 537px;
+    max-width: 489px;
     /* max-height: 190px; */
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0px -103px -26px 0px;

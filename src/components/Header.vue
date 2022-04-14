@@ -3,7 +3,7 @@
   
   <!-- <Header/> -->
   <div v-if="!hideDonate" class="notification-top-bar row m-0">
-  <div class="col-4"></div><div class="col-4 d-flex justify-content-center align-items-center"><button type="button" class="btn btn-outline-light" style="white-space: nowrap;">Donate Now</button></div><div class="col-4 d-flex justify-content-end align-items-center"><button @click="hideDonate=true" type="button" class="btn-close" aria-label="Close"></button></div>
+  <div class="col-4"></div><div class="col-4 d-flex justify-content-center align-items-center"><button type="button" class="btn btn-outline-light" style="white-space: nowrap;">Protect Now</button></div><div class="col-4 d-flex justify-content-end align-items-center"><button @click="hideDonate=true" type="button" class="btn-close" aria-label="Close"></button></div>
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50" id="mainNav"> 
   <div class="container" style="font-size: 90%;">
@@ -20,7 +20,7 @@
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">Project</a> -->
           <!-- <router-link :to="{name:'ContactUs'}" class="nav-link whatwedoNav">Save The Rainforest</router-link> -->
-          <router-link :to="{name:'Landing', hash: '#map'}" class="nav-link whatwedoNav">Save The Rainforest</router-link>
+          <router-link :to="{name:'Landing', hash: '#test'}" class="nav-link whatwedoNav">Save The Rainforest</router-link>
         </li>
         <li class="nav-item px-3">
           <!-- <a class="nav-link" href="#">News</a> -->
@@ -51,9 +51,6 @@ export default {
   },
   
   methods: { 
-  scrollToTop() {
-    window.scrollTo(0,0);
-  }
 }
 
 }

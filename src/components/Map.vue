@@ -1,5 +1,5 @@
 <template>
-  <section class="map" id="map">
+  <section class="map" id="mapSection">
       <div class="p-2 mb-5 bg-body" style="max-width: 1200px; margin:auto">
           <h1 class="mb-2 mt-4 mt-md-5 allTitle"><strong>Rainforest Protectors in the World</strong></h1>
           <img src="../assets/map.png" alt="" class="map2">
@@ -15,6 +15,11 @@
                 <button type="button" class="btn btn-success btn-sm d-md-none"><strong>Contribute to Keep It Green <br> USD5.00</strong></button>
               </div>
           </div>
+
+          </div>
+<Divider/>
+
+          <div class="p-2 mb-5 bg-body" style="max-width: 1200px; margin:auto">
         <div class="shadow bg-success text-white p-3 my-5 rounded cardTitle">
             Rainforest Protectors
         </div> 
@@ -46,7 +51,7 @@
                       <div class="h-25 text-md-start protectName">
                           <strong>Chris</strong>
                       </div>
-                      <div class="mt-3 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           Let’s do it tagether
                       </div>
                   </div>
@@ -54,7 +59,7 @@
                       <div class="h-25 text-md-start">
                           2 NFT
                       </div>
-                      <div class="my-2 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           28.03.2022
                       </div>
                   </div>
@@ -66,7 +71,7 @@
                       <div class="h-25 text-md-start protectName">
                           <strong>Anoymous</strong>
                       </div>
-                      <div class="mt-3 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           
                       </div>
                   </div>
@@ -74,7 +79,7 @@
                       <div class="h-25 text-md-start">
                           15 NFT
                       </div>
-                      <div class="my-2 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           27.03.2022
                       </div>
                   </div>
@@ -85,7 +90,7 @@
                       <div class="h-25 text-md-start protectName">
                           <strong>Alex</strong>
                       </div>
-                      <div class="mt-3 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           Protect the forest for next generation. Protect the forest for next generation. Protect the forest for next generation.
                       </div>
                   </div>
@@ -93,7 +98,7 @@
                       <div class="h-25 text-md-start">
                           5 NFT
                       </div>
-                      <div class="my-2 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           29.03.2022
                       </div>
                   </div>
@@ -105,7 +110,7 @@
                       <div class="h-25 text-md-start protectName">
                           <strong>Chris</strong>
                       </div>
-                      <div class="mt-3 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           Let’s do it tagether
                       </div>
                   </div>
@@ -113,7 +118,7 @@
                       <div class="h-25 text-md-start">
                           2 NFT
                       </div>
-                      <div class="my-2 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           28.03.2022
                       </div>
                   </div>
@@ -125,7 +130,7 @@
                       <div class="h-25 text-md-start protectName">
                           <strong>Anoymous</strong>
                       </div>
-                      <div class="mt-3 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           
                       </div>
                   </div>
@@ -133,7 +138,7 @@
                       <div class="h-25 text-md-start">
                           15 NFT
                       </div>
-                      <div class="my-2 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           27.03.2022
                       </div>
                   </div>
@@ -145,7 +150,7 @@
                       <div class="h-25 text-md-start protectName">
                           <strong>Alex</strong>
                       </div>
-                      <div class="mt-3 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           Protect the forest for next generation. Protect the forest for next generation. Protect the forest for next generation.
                       </div>
                   </div>
@@ -153,7 +158,7 @@
                       <div class="h-25 text-md-start">
                           5 NFT
                       </div>
-                      <div class="my-2 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           29.03.2022
                       </div>
                   </div>
@@ -165,7 +170,7 @@
                       <div class="h-25 text-md-start protectName">
                           <strong>Chris</strong>
                       </div>
-                      <div class="mt-3 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           Let’s do it tagether
                       </div>
                   </div>
@@ -173,7 +178,7 @@
                       <div class="h-25 text-md-start">
                           2 NFT
                       </div>
-                      <div class="my-2 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           28.03.2022
                       </div>
                   </div>
@@ -193,7 +198,7 @@
                       <div class="h-25 text-md-start">
                           15 NFT
                       </div>
-                      <div class="my-2 my-md-0 h-75 text-md-start">
+                      <div class="mt-2 h-75 text-md-start">
                           27.03.2022
                       </div>
                   </div>
@@ -208,7 +213,7 @@
 
           <div class="my-4 d-lg-none">
           <div class="protectorList">
-              <div class="row shadow border-success py-3 m-2">
+              <div class="row shadow border-success py-2 m-2">
                   <div class="col-12 d-flex align-items-center justify-content-center my-2"><img src="../assets/Flag/img1.png" alt="" style="max-height:50px;"></div>
                   <div class="col-4 d-flex justify-content-start my-2">
                       <strong>Alex</strong>
@@ -218,7 +223,7 @@
                   <div class="col-12" style="text-align: justify;">Protect the forest for next generation. Protect the forest for next generation. Protect the forest for next generation </div>
               </div>
 
-              <div class="row shadow border-success py-3 m-2">
+              <div class="row shadow border-success py-2 m-2">
                   <div class="col-12 d-flex align-items-center justify-content-center my-2"><img src="../assets/Flag/img2.png" alt="" style="max-height:50px;"></div>
                   <div class="col-4 d-flex justify-content-start my-2">
                       <strong>Joey</strong>
@@ -228,7 +233,7 @@
                   <div class="col-12" style="text-align: justify;">Let’s do it tagether</div>
               </div>
 
-              <div class="row shadow border-success py-3 m-2">
+              <div class="row shadow border-success py-2 m-2">
                   <div class="col-12 d-flex align-items-center justify-content-center my-2"><img src="../assets/Flag/img4.png" alt="" style="max-height:50px;"></div>
                   <div class="col-4 d-flex justify-content-start my-2">
                       <strong>Chris</strong>
@@ -238,7 +243,7 @@
                   <div class="col-12" style="text-align: justify;">For tree </div>
               </div>
 
-              <div class="row shadow border-success py-3 m-2">
+              <div class="row shadow border-success py-2 m-2">
                   <div class="col-12 d-flex align-items-center justify-content-center my-2"><img src="../assets/Flag/img5.png" alt="" style="max-height:50px;"></div>
                   <div class="col-4 d-flex justify-content-start my-2">
                       <strong>Anonymous</strong>
@@ -248,7 +253,7 @@
                   <div class="col-12" style="text-align: justify;"> </div>
               </div>
 
-              <div class="row shadow border-success py-3 m-2">
+              <div class="row shadow border-success py-2 m-2">
                   <div class="col-12 d-flex align-items-center justify-content-center my-2"><img src="../assets/Flag/img1.png" alt="" style="max-height:50px;"></div>
                   <div class="col-4 d-flex justify-content-start my-2">
                       <strong>Alex</strong>
@@ -258,7 +263,7 @@
                   <div class="col-12" style="text-align: justify;">Protect the forest for next generation. Protect the forest for next generation. Protect the forest for next generation </div>
               </div>
 
-              <div class="row shadow border-success py-3 m-2">
+              <div class="row shadow border-success py-2 m-2">
                   <div class="col-12 d-flex align-items-center justify-content-center my-2"><img src="../assets/Flag/img2.png" alt="" style="max-height:50px;"></div>
                   <div class="col-4 d-flex justify-content-start my-2">
                       <strong>Joey</strong>
@@ -268,7 +273,7 @@
                   <div class="col-12" style="text-align: justify;">Let’s do it tagether</div>
               </div>
 
-              <div class="row shadow border-success py-3 m-2">
+              <div class="row shadow border-success py-2 m-2">
                   <div class="col-12 d-flex align-items-center justify-content-center my-2"><img src="../assets/Flag/img4.png" alt="" style="max-height:50px;"></div>
                   <div class="col-4 d-flex justify-content-start my-2">
                       <strong>Chris</strong>
@@ -278,7 +283,7 @@
                   <div class="col-12" style="text-align: justify;">For tree </div>
               </div>
 
-              <div class="row shadow border-success py-3 m-2">
+              <div class="row shadow border-success py-2 m-2">
                   <div class="col-12 d-flex align-items-center justify-content-center my-2"><img src="../assets/Flag/img5.png" alt="" style="max-height:50px;"></div>
                   <div class="col-4 d-flex justify-content-start my-2">
                       <strong>Anonymous</strong>
@@ -299,7 +304,7 @@
 </template>
 
 <script>
-
+import Divider from './Divider.vue'
 
 export default {
 
@@ -307,6 +312,10 @@ export default {
         return{
         isActive: true,
     }
+    },
+    
+    components: {
+        Divider,
     },
     
     methods: {

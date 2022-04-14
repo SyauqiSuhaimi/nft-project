@@ -52,14 +52,14 @@ const router = createRouter({
       return savedPosition;
     }
     else if(to.hash){
-      // return{
-      //   selector: to.hash,
-      // }
-
-      const options = {
-        top: document.querySelector(to.hash).offsetTop,
-        behaviour: 'smooth',
+      return{
+        selector: to.hash,
       }
+
+      // const options = {
+      //   top: document.querySelector(to.hash).offsetTop,
+      //   behaviour: 'smooth',
+      // }
     }
     else
     {

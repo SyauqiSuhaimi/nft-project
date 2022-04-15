@@ -98,7 +98,7 @@ export default {
 
 }
 .footerLink:hover {
-  color: var(--navcolor);
+  color: var(--primecolor);
 
 }
 
@@ -109,12 +109,12 @@ export default {
 }
 
 .fa:hover{
-  color: var(--navcolor);
+  color: var(--primecolor);
 }
 
 .footerLink2 {
   
-  color: var(--navcolor);
+  color: var(--primecolor);
   /* font-size: 20px; */
   text-decoration: none;
 
@@ -125,8 +125,8 @@ export default {
 }
 
 #btnFooter:hover{
-  background: var(--navcolor);
-  border-color: var(--navcolor);
+  background: var(--primecolor);
+  border-color: var(--primecolor);
 
 }
 

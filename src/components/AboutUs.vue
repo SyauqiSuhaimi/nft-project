@@ -51,18 +51,5 @@ export default {
   padding: 5% 50px;
 } */
 
-#buttons{
-  background-color: #00B050;
-  color: white;
-  border: 0;
-  
-  
-}
-
-#buttons:hover{
-  background-color: rgb(4, 139, 47);
-  color: white;
-}
-
 
 </style>

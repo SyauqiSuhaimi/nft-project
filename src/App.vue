@@ -62,9 +62,30 @@ export default {
 <style>
 
 :root {
-  --navcolor:  #48f398;
-  --primecolor:  #198754;
+  --primecolor:  #8CC140;
+  --buttoncolor:  #52CD0E;
 }
+
+#buttons{
+  background-color: var(--buttoncolor);
+  border: 0;
+  transition: box-shadow .15s,transform .15s;
+}
+
+#buttons:hover {
+  background-color: var(--buttoncolor);
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--buttoncolor) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#buttons:focus{
+  box-shadow: 0;
+}
+
+#buttons:active {
+  box-shadow: var(--buttoncolor) 0 3px 7px inset;
+  transform: translateY(2px);
+} 
 
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -72,7 +93,7 @@ export default {
   -moz-osx-font-smoothing: grayscale; */
   /* font-family: 'Times New Roman', Times, serif; */
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -94,7 +115,7 @@ export default {
   -moz-osx-font-smoothing: grayscale; */
   /* font-family: 'Times New Roman', Times, serif; */
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .allTitle{
@@ -104,14 +125,14 @@ export default {
 .cardTitle1{
   font-weight: bold;
 color: var(--primecolor);
-font-size: 16px;
+font-size: 14px;
 padding: 1px;
 padding-top: 0;
 }
 
 .cardTitle{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
 }
 

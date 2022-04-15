@@ -175,21 +175,21 @@ window.addEventListener('DOMContentLoaded', event => {
 } */
 
 #mainNav a.router-link-exact-active {
-    color: var(--navcolor);
+    color: var(--primecolor);
     outline: none;
-    border-bottom: 0.25rem solid var(--navcolor);
+    border-bottom: 0.25rem solid var(--primecolor);
 }
 
 #mainNav.navbar-shrink a.router-link-exact-active {
-    color: var(--navcolor);
+    color: var(--primecolor);
     outline: none;
-    border-bottom: 0.25rem solid var(--navcolor);
+    border-bottom: 0.25rem solid var(--primecolor);
 }
 
 #mainNav a.nav-link:hover {
-    color: var(--navcolor);
+    color: var(--primecolor);
     outline: none;
-    border-bottom: 0.25rem solid var(--navcolor);
+    border-bottom: 0.25rem solid var(--primecolor);
 }
 
 

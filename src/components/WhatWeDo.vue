@@ -128,98 +128,181 @@
 
 
       <!-- //////////////////////////////// Mobile View ///////////////////////////////// -->
-      <div class="d-lg-none">
-          <div class="row mb-4">
-              <div class="col-12 navTabMobile py-2" :class="{active: DeforestActive}" @click="ActiveDeforest"> <h1 class="allTitle"><strong>Effects of Deforestation</strong></h1></div>
-              <div class="col-12 navTabMobile2 py-2" :class="{active: WhatwedoActive}" @click="ActiveWhatwedo"><h1 class="allTitle"><strong>What We Do</strong></h1></div>
-          </div>
 
-           <!-- ////////////////////// Deforestation //////////////////////////////////////-->
-          <div class="row" v-show="DeforestActive">
-              <div class="row d-flex justify-content-center my-3 mx-1">
-                    <div class="card cardStyle" style="max-width: 500px;">
-                        <div class="containerimg" style=""></div>
-                    <!-- <img src="../assets/Deforestation/img1.jpg" class="w-100" alt="..." style="max-width: 500px; max-height:300px"> -->
-                    <div class="card-body">
+      <!-- ////////////////////// Deforestation //////////////////////////////////////-->
+      
+      <div class="d-lg-none">
+          <div class="my-2">
+              <div class="row">
+              <div class="col-12"> <h1 class="cardTitle">Effects of Deforestation</h1></div>
+          </div>
+          <div class="row d-flex mb-3 justify-content-center">
+              <div class="col-5" style="border-top-style: solid; border-color: var(--primecolor)"></div>
+          </div>
+                    <swiper
+                :slidesPerView="1"
+                :spaceBetween="10"
+                :slidesPerGroup="1"
+                :loop="true"
+                :loopFillGroupWithBlank="true"
+                :navigation="true"
+                :modules="modules"
+                :autoplay='{
+                "delay": 3000,
+                "disableOnInteraction": false
+                }' 
+                class="mySwiper"
+            >
+        <swiper-slide>
+        <div class="container">
+              <div class="row d-flex justify-content-center">
+                  <div class="col-10 px-0 w-100 d-flex justify-content-center">
+                    <div class="card" style="max-width: 1080px;">
+                        <div class="containerimg"></div>
+                    <!-- <img src="../assets/Deforestation/img1.jpg" class="card-img-top" alt="..." style="object-fit: contain;"> -->
+                    <div class="card-body cardBodyStyle">
                         <h1 class="cardTitle">Increase in Global Warming</h1>
-                        <p class="card-text justifyText">Trees help regulate the climate by absorbing CO2 from the atmosphere. With constant deforestation, the ratio of greenhouse gases in the atmosphere has increased, adding to our global warming woes.</p>
+                        <p class="card-text text-light justifyText">Trees help regulate the climate by absorbing CO2 from the atmosphere. With constant deforestation, the ratio of greenhouse gases in the atmosphere has increased, adding to our global warming woes.</p>
                     </div>
                     </div>
-                </div>
-                 <div class="row d-flex justify-content-center my-3 mx-1">
-                    <div class="card cardStyle" style="max-width: 500px;">
-                        <div class="containerimg2" style=""></div>
-                    <!-- <img src="../assets/Deforestation/img2.jpg" class="w-100" alt="..." style="max-width: 500px; max-height:300px"> -->
-                    <div class="card-body">
+                  </div>
+              </div>
+          </div>
+          </swiper-slide>
+          <swiper-slide>
+              <div class="container">
+              <div class="row d-flex justify-content-center">
+                  <div class="col-10 px-0 w-100 d-flex justify-content-center">
+                    <div class="card" style="max-width: 1080px;">
+                        <div class="containerimg2"></div>
+                    <!-- <img src="../assets/Deforestation/img2.jpg" class="card-img-top" alt="..." style="object-fit: contain;"> -->
+                    <div class="card-body cardBodyStyle">
                         <h1 class="cardTitle">Soil Erosion & Floods</h1>
-                        <p class="card-text justifyText">With the clearance of tree cover, the land is directly exposed to the sun, making it dry.  
+                        <p class="card-text text-light justifyText">With the clearance of tree cover, the land is directly exposed to the sun, making it dry.  
 When it rains, the flow of water is disrupted, and the soil loses its ability to retain water. It leads to floods in some areas and droughts in others.
 </p>
                     </div>
                     </div>
-                </div>
-                <div class="row d-flex justify-content-center my-3 mx-1">
-                    <div class="card cardStyle" style="max-width: 500px;">
-                        <div class="containerimg3" style=""></div>
-                    <!-- <img src="../assets/Deforestation/img4.jpg" class="w-100" alt="..." style="max-width: 500px; max-height:300px"> -->
-                    <div class="card-body">
+                  </div>
+              </div>
+          </div>
+          </swiper-slide>
+          <swiper-slide><div class="container">
+              <div class="row d-flex justify-content-center">
+                  <div class="col-10 px-0 w-100 d-flex justify-content-center">
+                    <div class="card" style="max-width: 1080px;">
+                        <div class="containerimg3"></div>
+                    <!-- <img src="../assets/Deforestation/img4.jpg" class="card-img-top" alt="..." style="object-fit: contain;"> -->
+                    <div class="card-body cardBodyStyle">
                         <h1 class="cardTitle">Wildlife Extinction & Habitat Loss</h1>
-                        <p class="card-text justifyText">Due to the massive felling down of trees, various animal species are lost. They lose their habitat and also forced to move to a new location. Many of them are even pushed to extinction.</p>
+                        <p class="card-text text-light justifyText">Due to the massive felling down of trees, various animal species are lost. They lose their habitat and also forced to move to a new location. Many of them are even pushed to extinction.</p>
                     </div>
                     </div>
-                </div>
+                  </div>
+              </div>
+          </div>
+          </swiper-slide>
+            </swiper>
+
           </div>
 
-           <!-- ////////////////////// Deforestation //////////////////////////////////////-->
+          <!-- ////////////////////// Deforestation //////////////////////////////////////-->
 
-        <!-- ////////////////////// What WE Do //////////////////////////////////////-->
-          <div class="row" v-show="WhatwedoActive">
+          <!-- ////////////////////// What WE Do //////////////////////////////////////-->
 
-              <div class="row d-flex justify-content-center my-3 mx-1">
-                    <div class="card cardStyle" style="max-width: 500px;">
+          <div class="my-3">
+              <div class="row">
+              <div class="col-12"><h1 class="cardTitle">What We Do</h1></div>
+          </div>
+          <div class="row d-flex mb-3 justify-content-center">
+              <div class="col-5" style="border-top-style: solid; border-color: var(--primecolor)"></div>
+          </div>
+          
+          
+          <swiper
+                :slidesPerView="1"
+                :spaceBetween="10"
+                :slidesPerGroup="1"
+                :loop="true"
+                :loopFillGroupWithBlank="true"
+                :navigation="true"
+                :modules="modules"
+                :autoplay='{
+                "delay": 3000,
+                "disableOnInteraction": false
+                }'  
+                class="mySwiper2"
+            >
+        <swiper-slide>
+        <div class="container">
+              <div class="row d-flex justify-content-center">
+                  <div class="col-10 px-0 w-100 d-flex justify-content-center">
+                    <div class="card" style="max-width: 1080px;">
                         <div class="containerimg4"></div>
-                    <!-- <img src="../assets/Whatwedo/img1.webp" class="w-100" alt="..." style="transform: scaleX(-1); max-width: 500px; max-height:300px"> -->
-                    <div class="card-body">
+                    <!-- <img src="../assets/Whatwedo/img1.webp" class="card-img-top" alt="..." style="object-fit: contain;"> -->
+                    <div class="card-body cardBodyStyle2">
                         <h1 class="cardTitle">Tree Planting</h1>
-                        <p class="card-text justifyText">Once land is under conservation management by Need For Trees, options are investigated to restore deforested land and degraded habitat, reconnecting previously fragmented forest patches. This can be achieved using two techniques; tree planting and removing a threat to allow forest to regenerate naturally.</p>
+                        <p class="card-text text-light justifyText">Once land is under conservation management by Need For Trees, options are investigated to restore deforested land and degraded habitat, reconnecting previously fragmented forest patches. This can be achieved using two techniques; tree planting and removing a threat to allow forest to regenerate naturally.</p>
                     </div>
                     </div>
-                </div>
-                 <div class="row d-flex justify-content-center my-3 mx-1">
-                    <div class="card cardStyle" style="max-width: 500px;">
-                        <div class="containerimg5" style=""></div>
-                    <!-- <img src="../assets/Whatwedo/img2.jpeg" class="w-100" alt="..." style="max-width: 500px; max-height:300px"> -->
-                    <div class="card-body">
-                        <h1 class="cardTitle">Land Acquisition</h1>
-                        <p class="card-text justifyText">We preserve rainforest from threatened habitats through land purchase. Partnership with government body and local community, Need For Trees funds the purchase or lease of threatened land to create nature reserves, protecting both habitats and their wildlife.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center my-3 mx-1">
-                    <div class="card cardStyle" style="max-width: 500px;">
-                        <div class="containerimg6" style=""></div>
-                    <!-- <img src="../assets/Whatwedo/img3.jpg" class="w-100" alt="..." style="max-width: 500px; max-height:300px"> -->
-                    <div class="card-body">
-                        <h1 class="cardTitle">Forest Patrol</h1>
-                        <p class="card-text justifyText">Dedicated Patrol Team who supports the protection of the rainforest from illegal logging, hunting of endangered species and forest fires.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center my-3 mx-1">
-                    <div class="card cardStyle" style="max-width: 500px;">
-                        <div class="containerimg7" style=""></div>
-                    <!-- <img src="../assets/Whatwedo/img4.jpg" class="w-100" alt="..." style="max-width: 500px; max-height:300px"> -->
-                    <div class="card-body">
-                        <h1 class="cardTitle">Maintenance</h1>
-                        <p class="card-text justifyText">Maintenance is an important part of our reforestation project. With regular maintenance such as assessment of trees safety conditions, the saplings have a growth and survival rate of up to 85% compared to saplings without maintenance.</p>
-                    </div>
-                    </div>
-                </div>
+                  </div>
+              </div>
           </div>
-
-          <!-- ////////////////////// What WE Do //////////////////////////////////////-->      
+          </swiper-slide>
+          <swiper-slide>
+              <div class="container">
+              <div class="row d-flex justify-content-center">
+                  <div class="col-10 px-0 w-100 d-flex justify-content-center">
+                    <div class="card" style="max-width: 1080px;">
+                        <div class="containerimg5"></div>
+                    <!-- <img src="../assets/Whatwedo/img2.jpeg" class="card-img-top" alt="..." style="object-fit: contain;"> -->
+                    <div class="card-body cardBodyStyle2">
+                        <h1 class="cardTitle">Land Acquisition</h1>
+                        <p class="card-text text-light justifyText">We preserve rainforest from threatened habitats through land purchase. Partnership with government body and local community, Need For Trees funds the purchase or lease of threatened land to create nature reserves, protecting both habitats and their wildlife.</p>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </swiper-slide>
+          
+          <swiper-slide><div class="container">
+              <div class="row d-flex justify-content-center">
+                  <div class="col-10 px-0 w-100 d-flex justify-content-center">
+                    <div class="card" style="max-width: 1080px;">
+                        <div class="containerimg6"></div>
+                    <!-- <img src="../assets/Whatwedo/img3.jpg" class="card-img-top" alt="..." style="object-fit: contain;"> -->
+                    <div class="card-body cardBodyStyle2">
+                        <h1 class="cardTitle">Forest Patrol</h1>
+                        <p class="card-text text-light justifyText">Dedicated patrol team who supports the protection of the rainforest from illegal logging, hunting of endangered species and forest fires.</p>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </swiper-slide>
+          <swiper-slide><div class="container">
+              <div class="row d-flex justify-content-center">
+                  <div class="col-10 px-0 w-100 d-flex justify-content-center">
+                    <div class="card" style="max-width: 1080px;">
+                        <div class="containerimg7"></div>
+                    <!-- <img src="../assets/Whatwedo/img4.jpg" class="card-img-top" alt="..." style="object-fit: contain;"> -->
+                    <div class="card-body cardBodyStyle2">
+                        <h1 class="cardTitle">Maintenance</h1>
+                        <p class="card-text text-light justifyText">Maintenance is an important part of our reforestation project. With regular maintenance such as assessment of trees safety conditions, the saplings have a growth and survival rate of up to 85% compared to saplings without maintenance.</p>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </swiper-slide>
+            </swiper>
+          </div>
 
       </div>
+
+       <!-- ////////////////////// What WE Do //////////////////////////////////////-->
+
       <!-- //////////////////////////////// Mobile View ///////////////////////////////// -->
 
       </div>
@@ -228,14 +311,30 @@ When it rains, the flow of water is disrupted, and the soil loses its ability to
 
 <script>
 
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Pagination, Navigation, Autoplay } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import {ref, reactive} from 'vue'
 export default {
+    
+    components: {
+    Swiper,
+    SwiperSlide,
+  },
+
     setup(){
 
         const HideWeDo = ref(true)
 
-        return{HideWeDo}
+        return{
+            HideWeDo,
+            modules: [Pagination, Navigation, Autoplay],
+            }
     },
 
     data() {
@@ -266,9 +365,78 @@ export default {
 
 <style>
 
+.cardBodyStyle{
+    background-color: var(--primecolor);
+    height: 165px;
+}
+
+.cardBodyStyle2{
+    background-color: var(--primecolor);
+    height: 190px;
+}
+
+/* ///////////////// swiper style ////////////////// */
+
+.swiper {
+  width: 100%;
+  /* height: 120%; */
+}
+
+.mySwiper {
+  width: 100%;
+  height: 400px;
+  /* overflow: visible; */
+}
+
+.mySwiper2 {
+  width: 100%;
+  height: 420px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+}
+
+.swiper-pagination{
+    bottom: -10px;
+}
+
+.swiper-slide {
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper2 .swiper-button-next, .mySwiper2 .swiper-button-prev{
+    top: 45%;
+}
+
+
+/* ///////////////// swiper style ////////////////// */
+
+
 
 .whatWedo{
-    background-color: #4d4c4c;
+    /* background-color: #4d4c4c; */
     padding: 50px 0;
     /* background-image: url(../assets/bg4.jpeg); */
     /* backdrop-filter: grayscale(100%);; */
@@ -320,8 +488,8 @@ export default {
 }
 
 .navTab.active{
-    color: var(--navcolor);
-    border-bottom: 0.25rem solid var(--navcolor);
+    color: var(--primecolor);
+    border-bottom: 0.25rem solid var(--primecolor);
     /* background-color:white; */
     /* border-color:var(--primecolor) var(--primecolor) #fff; */
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -349,8 +517,8 @@ export default {
 }
 
 .navTab2.active{
-    color: var(--navcolor);
-    border-bottom: 0.25rem solid var(--navcolor);
+    color: var(--primecolor);
+    border-bottom: 0.25rem solid var(--primecolor);
     /* background-color:white; */
     /* border-color:var(--primecolor) var(--primecolor) #fff; */
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -376,8 +544,8 @@ export default {
 }
 
 .navTabMobile.active{
-    color: var(--navcolor);
-    border-bottom: 0.25rem solid var(--navcolor);
+    color: var(--primecolor);
+    border-bottom: 0.25rem solid var(--primecolor);
     /* background-color:white; */
     /* border-color:var(--primecolor) var(--primecolor) #fff; */
     /* background-image: none; */
@@ -401,8 +569,8 @@ export default {
 
 }
 .navTabMobile2.active{
-    color: var(--navcolor);
-    border-bottom: 0.25rem solid var(--navcolor);
+    color: var(--primecolor);
+    border-bottom: 0.25rem solid var(--primecolor);
     /* background-color:white; */
     /* border-color:var(--primecolor) var(--primecolor) #fff; */
     /* background-image: none; */
@@ -650,7 +818,7 @@ export default {
     height:210px;
     background-position: center;
     background-size: cover;
-    background-image: url(../assets/Whatwedo/img1.jpg);
+    background-image: url(../assets/Whatwedo/img1.png);
 }
 
   .containerimg5{
@@ -658,7 +826,7 @@ export default {
     height:210px;
     background-position: center;
     background-size: cover;
-    background-image: url(../assets/Whatwedo/img2.jpg);
+    background-image: url(../assets/Whatwedo/img2.jpeg);
 }
 
   .containerimg6{

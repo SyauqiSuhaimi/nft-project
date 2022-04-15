@@ -44,12 +44,26 @@
   <div class="aboutUs">
       
   <div class="bg-body p-md-5 px-4 abotUs">
-          <h1 class="allTitle"> <strong>About Us</strong> </h1>
+    <div class="d-none d-md-block">
+      <h1 class="allTitle"> <strong>About Us</strong> </h1>
           <div style="text-align: justify; margin-top:3%;">
           <p>Malaysia is rich in biodiversity with around 306 species of mammals, 15,000 vascular plants and many species. This is largely to do with the tropical forests which are naturally rich in life all around the world. When forested cover decreases so does biodiversity, with wildlife being exposed and vulnerable to hunting, poaching, loss of breeding grounds as well as food resources. Beside that, much of that stored carbon is released into the atmosphere again as CO2 when forest are cut down. This is how deforestation and forest degradation contribute to global warming.</p>
           <p>Need For Tree is a forest conservation service that protects rainforest ecosystems in Malaysia, and preserves them for future generations.  On behalf of tropical communities, we acquire rainforest real estate, and sell it to people anywhere on the globe, with the guarantee that the forest remains untouched for at least 30 years.</p>
-          <p>However, going green is not just an option, it is the future. We need to protect the environment; hence everyone should help the forest. If you're concerned about deforestation and the effect it has on vulnerable endangered species and people, now there's something you can do about it.</p>
+          <p>However, going green is not just an option, it is the future. We need to protect the environment; hence everyone should help the forest. If you're concerned about deforestation and the effect it has on vulnerable endangered species and people, now there's something you can do about it.</p> 
         </div>
+    </div>
+
+    <div class="d-md-none">
+      <h1 class="allTitle"> <strong>About Us</strong> </h1>
+          <div style="text-align: justify; margin-top:3%;">
+          <p>Malaysia is rich in biodiversity with around 306 species of mammals, 15,000 vascular plants and many species. This is largely to do with the tropical forests which are naturally rich in life all around the world. When forested cover decreases so does biodiversity, with wildlife being exposed and vulnerable to hunting, poaching, loss of breeding grounds as well as food resources. Beside that, much of that stored carbon is released into the atmosphere again as CO2 when forest are cut down. This is how deforestation and forest degradation contribute to global warming.</p>
+          <div class="mb-3"><span @click="seeMoreAbout" id="seeMore" v-show="isActive">See More</span></div>
+          <p v-show="!isActive">Need For Tree is a forest conservation service that protects rainforest ecosystems in Malaysia, and preserves them for future generations.  On behalf of tropical communities, we acquire rainforest real estate, and sell it to people anywhere on the globe, with the guarantee that the forest remains untouched for at least 30 years.</p>
+          <p v-show="!isActive">However, going green is not just an option, it is the future. We need to protect the environment; hence everyone should help the forest. If you're concerned about deforestation and the effect it has on vulnerable endangered species and people, now there's something you can do about it.</p>
+          <div class="mb-3"><span @click="seeMoreAbout" id="seeMore" v-show="!isActive">See Less</span> </div>
+        </div>
+    </div>
+          
 
         <div class="row">
         <div class="col-md-6 d-flex justify-content-center my-2">
@@ -62,10 +76,10 @@
               <div class="cardDesc1">Protect Rainforest for 30 years</div>
               <div class="cardTitle1">Project A</div>
               <div class="my-1 pb-2 d-none d-md-block">
-                <button type="button" class="btn btn-success btn-lg "><strong>Donate Now</strong></button>
+                <button type="button" class="btn btn-success btn-lg " id="buttons"><strong>Donate Now</strong></button>
                 </div>
                 <div class="my-1 pb-2 d-md-none">
-                <button type="button" class="btn btn-success btn-sm "><strong>Donate Now</strong></button>
+                <button type="button" class="btn btn-success btn-sm " id="buttons"><strong>Donate Now</strong></button>
                 </div>
               </div>
               
@@ -82,10 +96,10 @@
               <div class="cardDesc1">Contribute to Keep It Green</div>
               <div class="cardTitle1">Project A</div>
               <div class="my-1 pb-2 d-none d-md-block">
-                <button type="button" class="btn btn-success btn-lg "><strong>Donate Now</strong></button>
+                <button type="button" class="btn btn-success btn-lg " id="buttons"><strong>Donate Now</strong></button>
                 </div>
                 <div class="my-1 pb-2 d-md-none">
-                <button type="button" class="btn btn-success btn-sm "><strong>Donate Now</strong></button>
+                <button type="button" class="btn btn-success btn-sm" id="buttons"><strong>Donate Now</strong></button>
                 </div>
               </div>
               
@@ -106,6 +120,18 @@
 
 <script>
 export default {
+
+  data() {
+        return{
+        isActive: true,
+    }
+    },
+
+  methods: {
+    seeMoreAbout: function() {
+      this.isActive = !this.isActive;
+    }
+  }
 
 }
 </script>
@@ -216,33 +242,7 @@ bottom: 80%;
   text-align-last: center;
 }
 
-/* 
-#buttons{
-  background-color: #00B050;
-  color: white;
-  border: 0;
-  border-radius: 15px;
-  transition: box-shadow .15s,transform .15s;
-  margin: 10px;
-  font-size: calc(0.3rem + 1vw);
-  
-}
 
-#buttons:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-}
-
-#buttons:hover {
-  background-color: rgb(4, 139, 47);
-  color: white;
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-#buttons:active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
-  transform: translateY(2px);
-} */
 
 @media (max-width: 767px){
   .aboutUs{

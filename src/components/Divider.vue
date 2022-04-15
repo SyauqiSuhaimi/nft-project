@@ -195,7 +195,7 @@ border-style: solid;
 }
 
 .priceText2{
-  font-size: 16px;
+  font-size: 14px;
   color: var(--primecolor);
 }
 

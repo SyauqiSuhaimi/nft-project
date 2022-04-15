@@ -1,5 +1,5 @@
 <template>
-  <section class="whatWedo px-0" id="whatWedo" >
+  <section class="whatWedo p-0 py-md-5 px-md-0" id="whatWedo" >
       <div class="px-4 rounded" style="max-width: 1000px; margin:auto;">
 
 <!-- //////////////////////////////// Web View ///////////////////////////////// -->
@@ -134,7 +134,7 @@
       <div class="d-lg-none">
           <div class="my-2">
               <div class="row">
-              <div class="col-12"> <h1 class="cardTitle">Effects of Deforestation</h1></div>
+              <div class="col-12"> <h1 class="allTitle"><strong>Effects of Deforestation</strong> </h1></div>
           </div>
           <div class="row d-flex mb-3 justify-content-center">
               <div class="col-5" style="border-top-style: solid; border-color: var(--primecolor)"></div>
@@ -212,7 +212,7 @@ When it rains, the flow of water is disrupted, and the soil loses its ability to
 
           <div class="my-3">
               <div class="row">
-              <div class="col-12"><h1 class="cardTitle">What We Do</h1></div>
+              <div class="col-12"><h1 class="allTitle"><strong>What We Do</strong> </h1></div>
           </div>
           <div class="row d-flex mb-3 justify-content-center">
               <div class="col-5" style="border-top-style: solid; border-color: var(--primecolor)"></div>
@@ -800,7 +800,7 @@ export default {
   .containerimg2{
     width:100%;
     height:210px;
-    background-position: center;
+    background-position: 35%, 50%;
     background-size: cover;
     background-image: url(../assets/Deforestation/img2.jpg);
 }
@@ -808,7 +808,7 @@ export default {
   .containerimg3{
     width:100%;
     height:210px;
-    background-position: center;
+    background-position: 60%,50%;
     background-size: cover;
     background-image: url(../assets/Deforestation/img4.jpg);
 }

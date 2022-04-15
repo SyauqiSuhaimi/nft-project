@@ -53,6 +53,7 @@
         </div>
     </div>
 
+<!-- /////////////////////////// Mobile View ///////////////////////////////  -->
     <div class="d-md-none">
       <h1 class="allTitle"> <strong>About Us</strong> </h1>
           <div style="text-align: justify; margin-top:3%;">
@@ -63,9 +64,9 @@
           <div class="mb-3"><span @click="seeMoreAbout" id="seeMore" v-show="!isActive">See Less</span> </div>
         </div>
     </div>
-          
+        <!-- /////////////////////////// Mobile View ///////////////////////////////  -->
 
-        <div class="row">
+        <!-- <div class="row">
         <div class="col-md-6 d-flex justify-content-center my-2">
             <div class="cardAbout border">
               <div class="">
@@ -105,7 +106,7 @@
               
             </div>
           </div>
-        </div>
+        </div> -->
 
         
 
@@ -236,8 +237,8 @@ bottom: 80%;
 
 .abotUs{
   max-width: 1200px; 
-  min-height:800px; 
-  margin:30px auto; 
+  /* min-height:800px;  */
+  margin:20px auto; 
   border-radius: 60px;
   text-align-last: center;
 }

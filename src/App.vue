@@ -63,6 +63,7 @@ export default {
 
 :root {
   --primecolor:  #8CC140;
+  --secondcolor:  #9CC327;
   --buttoncolor:  #52CD0E;
 }
 
@@ -119,13 +120,13 @@ export default {
 }
 
 .allTitle{
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .cardTitle1{
   font-weight: bold;
 color: var(--primecolor);
-font-size: 14px;
+font-size: 12px;
 padding: 1px;
 padding-top: 0;
 }

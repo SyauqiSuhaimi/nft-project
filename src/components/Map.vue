@@ -32,7 +32,7 @@
                           <strong>Alex</strong>
                       </div>
                       <div class="mt-3 my-md-0 h-75 text-md-start">
-                          Protect the forest for next generation. Protect the forest for Protect the forest for next generation. Protect the forest for Protect the forest for next <span @click="seeMore" id="seeMore" v-show="isActive">See More</span> generation . Protect the generation. Protect the forest for next generation. <span @click="seeMore" id="seeMore">See Less</span>  
+                          Protect the forest for next generation. Protect the forest for Protect the forest for next generation. Protect the forest for Protect the forest for next generation. Protect the <span @click="seeMore" id="seeMore" v-show="isActive">See More</span> generation. Protect the forest for next generation. <span @click="seeMore" id="seeMore">See Less</span>  
                       </div>
                   </div>
                   <div class="col-md-2">
@@ -371,7 +371,7 @@ export default {
 
 
 .protecDetails{
-height: 110px;
+height: 100px;
 overflow: hidden;
 }
 </style>

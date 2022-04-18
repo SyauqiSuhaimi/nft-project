@@ -116,11 +116,11 @@ export default {
   -moz-osx-font-smoothing: grayscale; */
   /* font-family: 'Times New Roman', Times, serif; */
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .allTitle{
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .cardTitle1{

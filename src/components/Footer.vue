@@ -1,5 +1,5 @@
 <template>
-  <div class="footer container-fluid d-none d-lg-block">
+  <div class="footer container-fluid px-5 d-none d-lg-block">
 
     <!-- <div class="footer1 d-flex align-items-end py-0">
       <img src="../assets/footer.jpg" alt="" class="footer-background">
@@ -58,10 +58,12 @@
         
       </div>
       <div class="col-lg-4 px-5">
-        <div class="px-5"><p><strong>Quick Links</strong> </p></div>
+        <div class="px-5"><p><strong>Quick Links</strong> </p><hr class="footerLine"></div>
+        
       </div>
       <div class="col-lg-4 px-2">
-        <div class=""><p><strong>Current Projects</strong> </p></div>
+        <div class=""><p><strong>Current Projects</strong> </p><hr class="footerLine"></div>
+        
       </div>
     </div>
 
@@ -103,15 +105,15 @@
       </div>
       <div class="col-lg-4">
         <div class="row px-2 my-2">
-          <div class="col-6 px-0"><img src="../assets/HomeImage/image1.jpg" alt="" style="max-width: 100%; background-position: center; background-size: cover;"></div>
-          <div class="col-6 px-3">
+          <div class="col-7 px-0"><img src="../assets/HomeImage/image1.jpg" alt="" style="max-width: 100%; background-position: center; background-size: cover;"></div>
+          <div class="col-5">
              <div class="col-12"><p class="m-0" style="color:var(--primecolor)"><strong>16-7-2022</strong></p></div>
              <div class="col-12"><p class="m-0">Malaysia is rich in biodiversity with of mammals</p></div>
           </div>
         </div>
         <div class="row px-2 my-2">
-          <div class="col-6 px-0"><img src="../assets/HomeImage/image1.jpg" alt="" style="max-width: 100%; background-position: center; background-size: cover;"></div>
-          <div class="col-6 px-3">
+          <div class="col-7 px-0"><img src="../assets/HomeImage/image1.jpg" alt="" style="max-width: 100%; background-position: center; background-size: cover;"></div>
+          <div class="col-5">
              <div class="col-12"><p class="m-0" style="color:var(--primecolor)"><strong>16-7-2022</strong> </p></div>
              <div class="col-12"><p class="m-0">Malaysia is rich in biodiversity with of mammals</p></div>
           </div>
@@ -121,20 +123,23 @@
     </div>
 
     <div class="row my-2 px-2 text-end">
-      <div class="col-12"><a href="#" class="footerLink mx-3">Privacy Policy</a> | <a href="#" class="footerLink mx-3">Term Of Use</a></div>
+      <div class="col-12"><a href="#" class="footerLink mx-2">Privacy Policy</a> | <a href="#" class="footerLink mx-2">Term Of Use</a></div>
       <div class="col">&copy; 2022 Need For Tree. Official licensed product, all rights reserved.</div>
     </div>
 
   </div>
 
+
+  <!-- /////////////////////////////// Mobile View //////////////////////////////////// -->
+
 <div class="footer container-fluid d-lg-none text-start">
 
   <div class="row">
-    <div class="col-8">
+    <div class="col-7">
       <div class=""><a class="navbar-brand" href="/"><img src="@/assets/logo.png" alt="..." style="max-width:20%;"></a></div>
     </div>
-    <div class="col-4">
-      <div class=""><p><strong>Quick Links</strong> </p></div>
+    <div class="col-5 px-3 d-flex align-items-center">
+      <div class=""><p class="mb-0"><strong>Quick Links</strong></p><hr class="footerLine2"></div>
     </div>
   </div>
   <div class="row " >
@@ -177,7 +182,8 @@
 
   <div class="row my-3 text-start" style="text-align: justify;">
     <div class="col-12">
-      <div class="row"><strong>Current Projects</strong></div>
+      <div class="row"><strong class="px-2">Current Projects</strong></div>
+      <div class="row px-2"><hr class="footerLine2"></div>
         <div class="row px-2 my-2">
           <div class="col-6 px-0"><img src="../assets/HomeImage/image1.jpg" alt="" style="max-width: 100%; background-position: center; background-size: cover;"></div>
           <div class="col-6 px-3">
@@ -272,5 +278,19 @@ export default {
   border-color: var(--primecolor);
 
 }
+
+.footerLine{
+    max-width: 50px;
+    color: var(--primecolor);
+    border: 2px solid;
+}
+
+.footerLine2{
+    max-width: 30px !important; 
+    color: var(--primecolor) !important;
+    /* border: 2px solid; */
+    margin: 5px 0 !important;
+}
+
 
 </style>

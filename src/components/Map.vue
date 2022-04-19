@@ -17,10 +17,124 @@
           </div>
 
           </div>
-<Divider/>
+
+          <div class="facts" style="max-width: 1200px; margin:auto">
+              <div class="">
+                <h1 class="allTitle"><strong>Some Facts About NeedForTrees</strong></h1>
+                <hr class="titleLine">
+              </div>
+              
+              <div class="d-none d-lg-block">
+              <div class="row my-5">
+                  <div class="col-3">
+                      <div class="col-12">
+                          <i class="fa factIcon fa-file-text-o fa-3x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-12">
+                          <div class="factNo"><h1 class="allTitle"><strong>137</strong></h1></div>
+                      </div>
+                      <div class="col-12">
+                          <div><strong>Nations</strong> </div>
+                      </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="col-12">
+                          <i class="fa factIcon fa-file-text-o fa-3x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-12">
+                          <div class="factNo"><h1 class="allTitle"><strong>2567</strong></h1></div>
+                      </div>
+                      <div class="col-12">
+                          <div><strong>Protectors</strong></div>
+                      </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="col-12">
+                          <i class="fa factIcon fa-file-text-o fa-3x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-12">
+                          <div class="factNo"><h1 class="allTitle"><strong>598</strong></h1></div>
+                      </div>
+                      <div class="col-12">
+                          <div><strong>NFTs</strong></div>
+                      </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="col-12">
+                          <i class="fa factIcon fa-file-text-o fa-3x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-12">
+                          <div class="factNo"><h1 class="allTitle"><strong>$595k</strong></h1></div>
+                      </div>
+                      <div class="col-12">
+                          <div><strong>Collected</strong></div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+
+
+
+              <!-- /////////////////////////////////////////////////// Mobile View //////////////////////////////// -->
+
+              <div class="d-lg-none my-2" style="margin: auto 30px;">
+                  <div class="row mx-0 mt-4">
+                  <div class="col-6 p-0">
+                      <div class="row mx-0 p-2 d-flex justify-content-end" style="border-right-style: solid; border-bottom-style: solid; ">
+                          <div class="col-auto px-0 text-end">
+                          <i class="fa factIconMobile fa-file-text-o fa-3x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-auto px-0 text-end">
+                          <div class="factNo"><h1 class="factTitle my-0"><strong>137</strong></h1></div>
+                          <div><strong>Nations</strong></div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-6 p-0">
+                      <div class="row mx-0 p-2" style="border-left-style: solid; border-bottom-style: solid;">
+                          <div class="col-auto px-0 text-start">
+                          <i class="fa factIconMobile fa-file-text-o fa-3x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-6 px-0 text-start">
+                          <div class="factNo"><h1 class="factTitle my-0"><strong>2567</strong></h1></div>
+                          <div><strong>Protectors</strong></div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row mx-0">
+                  <div class="col-6 p-0">
+                      <div class="row mx-0 p-2 d-flex justify-content-end" style="border-right-style: solid; border-top-style: solid;">
+                          <div class="col-auto px-0 text-end">
+                          <i class="fa factIconMobile fa-file-text-o fa-3x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-auto px-0 text-end">
+                          <div class="factNo"><h1 class="factTitle my-0"><strong>598</strong></h1></div>
+                         <div><strong>NFTs</strong></div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-6 p-0">
+                      <div class="row mx-0 p-2" style="border-left-style: solid; border-top-style: solid;">
+                          <div class="col-auto px-0 text-start">
+                          <i class="fa factIconMobile fa-file-text-o fa-3x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-6 px-0 text-start">
+                          <div class="factNo"><h1 class="factTitle my-0"><strong>$595k</strong></h1></div>
+                          <div><strong>Collected</strong></div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+
+              <!-- /////////////////////////////////////////////// Mobile View ////////////////////////////////////// -->
+
+
+          </div>
 
           <div class="p-2 mb-5 bg-body" style="max-width: 1200px; margin:auto">
-        <div class="shadow bg-success text-white p-3 my-5 rounded cardTitle">
+        <div class="shadow bg-success text-white p-3 my-3 rounded cardTitle">
             Rainforest Protectors
         </div> 
         <div class="my-4 d-none d-lg-block">
@@ -374,4 +488,27 @@ export default {
 height: 100px;
 overflow: hidden;
 }
+
+.factIcon{
+    color: black;
+}
+
+.factNo{
+    /* font-size: 40px; */
+    font-weight: bold;
+    color: var(--primecolor);
+}
+
+.titleLine{
+    max-width: 300px;
+    color: var(--primecolor);
+    margin: auto;
+    border: 2px solid;
+}
+
+.factIconMobile{
+    color: black;
+    font-size: 40px;
+}
+
 </style>
